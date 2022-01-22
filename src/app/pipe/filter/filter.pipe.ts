@@ -5,8 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(value: string, productList: string[]): any {
+    if (!Array.isArray(productList) || !value || value == " ") {
+        return productList
+    } else {
+      return productList.filter( product => product.includes(value)
+      );
+    }
   }
-
 }
