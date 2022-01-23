@@ -8,6 +8,12 @@ import { Cat01Component } from './page/cat01/cat01.component';
 import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
 import { ProductCardComponent } from './common/product-card/product-card.component';
+import { ProductPagerComponent } from './common/product-pager/product-pager.component';
+import { ProductListComponent } from './common/product-list/product-list.component';
+import { FilterPipe } from './pipe/filter/filter.pipe';
+import { SortPipe } from './pipe/sort/sort.pipe';
+import { CategoryPipe } from './pipe/category/category.pipe';
+import { FeaturedPipe } from './pipe/featured/featured.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +22,13 @@ import { ProductCardComponent } from './common/product-card/product-card.compone
     Cat01Component,
     Cat02Component,
     HomeComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ProductPagerComponent,
+    ProductListComponent,
+    FilterPipe,
+    SortPipe,
+    CategoryPipe,
+    FeaturedPipe
   ],
   imports: [
     BrowserModule,
