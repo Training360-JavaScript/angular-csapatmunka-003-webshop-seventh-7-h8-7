@@ -9,7 +9,7 @@ export class FeaturedPipe implements PipeTransform {
   transform(productList: Product[], search: boolean): Product[] {
     if (!Array.isArray(productList) || !search) return productList;
 
-    return productList.filter(product => product[`featured`] = search ? true: false
+    return productList.filter(product => product[`featured`] == search ? true: false
       )
   }
 }
