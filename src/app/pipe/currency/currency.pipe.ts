@@ -13,8 +13,7 @@ export class CurrencyPipe implements PipeTransform {
       currency: 'Huf',
       minimumFractionDigits: 0,
       maximumFractionDigits: 5
-       }).format(value)
-      )
+       }).format(value))
   }
 
 }
