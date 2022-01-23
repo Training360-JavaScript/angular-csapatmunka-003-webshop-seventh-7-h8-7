@@ -14,6 +14,7 @@ import { FilterPipe } from './pipe/filter/filter.pipe';
 import { SortPipe } from './pipe/sort/sort.pipe';
 import { CategoryPipe } from './pipe/category/category.pipe';
 import { FeaturedPipe } from './pipe/featured/featured.pipe';
+import { CurrencyPipe } from './pipe/currency/currency.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FeaturedPipe } from './pipe/featured/featured.pipe';
     FilterPipe,
     SortPipe,
     CategoryPipe,
-    FeaturedPipe
+    FeaturedPipe,
+    CurrencyPipe
   ],
   imports: [
     BrowserModule,
