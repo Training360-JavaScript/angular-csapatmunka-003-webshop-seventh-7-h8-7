@@ -1,5 +1,5 @@
-<div class="card" style="width: 18rem;">
-  <img src={{ product.image }} class="card-img-top" alt="book cover">
+<div class="card text-center mb-2 p-2" style="width: 10rem;">
+  <img src="{{ product.image }}" class="card-img-top" alt="book cover">
   <div class="card-body">
 
     <h5 class="card-title">{{product.name}}</h5>
@@ -7,11 +7,12 @@
 
     <p class="card-text">{{product.description}}</p>
 
-    <h5 class="card-title">{{product.price}} Ft</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Készleten: {{ product.stock }} db</h6>
+    <h5 class="card-title">{{product.price}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Készlet: {{ product.stock }} </h6>
+    <h6>
+     <a href="#" class="card-link">részletek</a>
+    </h6>
 
-    <a href="#" class="card-link">Részletek</a>
-
-    <a href="#" class="btn btn-primary">Kosárba</a>
+    <a href="#" class="btn btn-success btn-sm btn-block">Kosárba</a>
   </div>
 </div>
