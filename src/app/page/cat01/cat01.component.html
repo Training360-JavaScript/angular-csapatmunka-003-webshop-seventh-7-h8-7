@@ -1,1 +1,8 @@
-<p>cat01 works!</p>
+<app-product-pager
+    [productList]="productList | category: 'cat-1' | featured: true">
+</app-product-pager>
+
+<app-product-list
+    [products]="productList | category: 'cat-1'">
+</app-product-list>
+
