@@ -9,7 +9,7 @@ export class ProductService {
     {
       id: 1,
       catId: 'cat-1',
-      name: 'Természetes gyulladáscsökkentők - Gyümölcsök, zöldségek, receptek az egészséges immunrendszerért',
+      name: 'Természetes gyulladáscsökkentők',
       author: 'Lizzie Streit',
       description:
         'Mindegy, hogy vegán, ketogén, kis szénhidráttartalmú, kis glikémiás indexű (GI) étrendet vagy más speciális diétát követünk, esetleg csak több egészséges élelmiszert szeretnénk beilleszteni a szokásos étrendünkbe, ez a könyv nagyszerű segítség, hogy megtegyük a kezdő lépéseket az egészséges életmódhoz.',
@@ -22,7 +22,7 @@ export class ProductService {
     {
       id: 2,
       catId: 'cat-1',
-      name: 'A tudatos család - Hogyan neveljünk önálló, rugalmas és kreatív gyerekeket',
+      name: 'A tudatos család',
       author: 'Dr. Shefali Tsabary',
       description:
         'Elérkezett egy új kezdet ideje, ahol a család már nem bilincs, ami gúzsba köt, hanem a föld, amelyből virágba szökkenünk, és az ég, ahol repülni tanulunk.Minden szülő nagyra törő álmokat dédelget a gyermekeivel kapcsolatban, de sok esetben ezek a remények irreális elvárásokká változnak. Mindez általában nagy nyomásként nehezedik a gyermekre, valódi károkat okozva és akadályoztatva a gyermek fejlődését.',
@@ -35,7 +35,7 @@ export class ProductService {
     {
       id: 3,
       catId: 'cat-1',
-      name: 'Az energiád kulcsa - 22 gyakorlat az érzelmi felszabaduláshoz',
+      name: 'Az energiád kulcsa',
       author: 'Natacha Calestrémé',
       description:
         'Natacha Calestrémé újságíró és rendező. Az egészség és a környezet szakértőjeként energiaadókkal, gyógyítókkal, médiumokkal és sámánokkal készített interjúkat. Számos kísérlet után ültette át agyakorlatba a szokatlan terapeuták technikáit, és megváltozott az élete.',
@@ -61,7 +61,7 @@ export class ProductService {
     {
       id: 5,
       catId: 'cat-1',
-      name: 'Nemet mondok a hulladékra - 101 egyszerű módszer, hogy kevesebb hulladékot termeljünk',
+      name: 'Nemet mondok a hulladékra',
       author: 'Harriet Dyer',
       description:
         'Praktikus könyvünk tanácsokat ad, hogyan csökkentsük a hulladék mennyiségét. Ötletekkel szolgál, miképp kerüljük el a felesleges csomagolást, hogyan hasznosítsuk újra régi háztartási cikkeinket, és hogyan csökkentsük nagy mértékben az élelmiszer-pazarlást.',
@@ -74,7 +74,7 @@ export class ProductService {
     {
       id: 6,
       catId: 'cat-1',
-      name: 'Túl a renden - Újabb 12 szabály az élethez',
+      name: 'Túl a renden',
       author: 'Jordan B. Peterson',
       description:
         'Ez a tizenkét újabb szabály segíti az olvasót egy bátrabb, igazabb élethez, amelyben több értelmet fog találni. Az élet értelme nem más, mint az ismert dolgainkon való túllépés, nem más, mint az örökké változó világhoz való alkalmazkodás.',
@@ -87,7 +87,7 @@ export class ProductService {
     {
       id: 7,
       catId: 'cat-1',
-      name: 'Szeretkezés fogságban - A szexualitástól az erotikáig',
+      name: 'Szeretkezés fogságban',
       author: 'Esther Perel',
       description:
         'Arra invitálja olvasóit, hogy nézzenek szembe a megszokás és a szexuális vágy elkerülhetetlen egységével és összefüggéseivel, és azt is eláruja, hogyan tudják megtartani (vagy újra felszítani) a vágy erejét a hosszútávú kapcsolatokban élő párok',
@@ -100,7 +100,7 @@ export class ProductService {
     {
       id: 8,
       catId: 'cat-1',
-      name: 'A jóga tudománya - Kézikönyv a test és az elme tökéletes harmóniájáért',
+      name: 'A jóga tudománya',
       author: 'Ann Swanson',
       description:
         'Akár kezdők, akár gyakorlottabbak vagyunk, A jóga tudománya segít a tudatos és eredményes jógagyakorlásban, a jóga anatómiájának megértésében és a szükséges technikai tudás fejlesztésében, hogy megfelelően végezhessük a gyakorlatokat, és ezáltal tökéletes harmóniába kerülhessen egymással a testünk és az elménk.',
@@ -139,7 +139,7 @@ export class ProductService {
     {
       id: 11,
       catId: 'cat-1',
-      name: '. F**k It - B...a meg! - Azt csináld, amit szeretsz!',
+      name: '. F**k It - B...a meg!',
       author: 'John C. Parkin',
       description:
         'Parkin arra vállalkozik, hogy megadja a szükséges lökést, hogy felhagyj a kifogásokkal, és végre azt tedd, amit szeretsz! Feltéve, ha tudod, mi az! Ha nem, az sem baj, John segít megtalálni. Sorra veszi mindazokat a gátakat, amelyekkel gyakran szembesülsz: Nem lehetek ilyen önző! vagy Sosem tudnék megélni abból, amit szeretek!. Segít legyőzni a legnagyobb visszatartó erőt: a félelmeidet.',
@@ -152,7 +152,7 @@ export class ProductService {
     {
       id: 12,
       catId: 'cat-1',
-      name: 'A zene taója - Hangpszichológia - Zenével változtasd meg az életed!',
+      name: 'A zene taója',
       author: 'John M. Ortiz PH.D',
       description:
         'Dr. Ortiz természetes zenészi képességeit és pszichológusi képzettségét kombinálva dolgozta ki módszereit több mint két évtizeden át, ezeket alkalmazva fogadja el, amit érez, és dolgozzon azon, amit érezni szeretne! Semmit nem kell bemagolni - egyszerűen csak "játssza el", és minél előbb koncentrál a zenére, annál hamarabb fogja jól érezni magát!',
@@ -165,7 +165,7 @@ export class ProductService {
     {
       id: 13,
       catId: 'cat-2',
-      name: 'Mi történt veled? - Életünk újraalkotásának kulcsa, a múlt traumáinak elengedése',
+      name: 'Mi történt veled?',
       author: 'Bruce D. Perry - Oprah Winfrey',
       description:
         'Oprah saját múltbéli történeteire és tapasztalataira támaszkodva elénk tárja, milyen sebezhetővé válhatunk a fiatalkorban átélt traumák és ártalmak hatására. A könyvön végigvonuló beszélgetésük során Oprah és dr. Perry az emberek, a különböző viselkedési formák és önmagunk megértésének témájára helyezi a hangsúlyt.',
@@ -178,7 +178,7 @@ export class ProductService {
     {
       id: 14,
       catId: 'cat-1',
-      name: 'A meditációról érthetően - Egy neurológus kutatóorvos útmutatója',
+      name: 'A meditációról érthetően',
       author: 'Dr. Steven Laureys',
       description:
         'Aki egyszer elkezdi gyakorolni valamelyik meditációs technikát, annak örökre megváltozik az élete - állítja a könyv szerzője, a belga Steven Laureys neurológus és kutató. Laureys a kómába esett emberek agyi működését vizsgálta tudósként, amikor találkozott a meditációval, és egyre több és több időt töltött vele.',
@@ -191,7 +191,7 @@ export class ProductService {
     {
       id: 15,
       catId: 'cat-1',
-      name: 'Jöttünk, láttunk, elegünk van - A fiatal felnőttek és a kiégés',
+      name: 'Jöttünk, láttunk, elegünk van',
       author: 'Anne Helen Petersen',
       description:
         'Pontos elemzés, mélyen együttérző könyv arról a lelki teherről, amellyel a modern kapitalizmus nehezedik rá azokra, akiket a saját képére formál. A Jöttünk, láttunk, elegünk van elengedhetetlenül fontos könyv korunk és saját magunk megértéséhez.',
@@ -217,7 +217,7 @@ export class ProductService {
     {
       id: 17,
       catId: 'cat-1',
-      name: 'Hogyan éljük túl a járványokat - A pandémiák múltja és jövője, és amit tehetünk ellenük egészségünk védelmében',
+      name: 'Hogyan éljük túl a járványokat',
       author: 'Michael Greger',
       description:
         'Miközben a világ az új koronavírus 2019 - más néven COVID-19 - pusztító hatásával küzd, dr. Greger nemcsak arra világít rá, hogy mit tehetünk a saját és a szeretteink védelmében egy pandémia alatt, hanem arra is, hogy az emberi társadalomnak muszáj lépéseket tennie annak érdekében, hogy csökkentse a jövőben ránk leselkedő még súlyosabb katasztrófák valószínűségét.',
@@ -243,7 +243,7 @@ export class ProductService {
     {
       id: 19,
       catId: 'cat-1',
-      name: 'Út a teljességhez - A betegségek jelentése és jelentősége',
+      name: 'Út a teljességhez',
       author: 'Ruediger Dahlke - Thorwald Dethlefsen',
       description:
         'Az út a teljességhez azokhoz szól, akik valóban szembe akarnak és mernek nézni önmagukkal - betegségükkel és azzal, amiről ez a betegség árulkodik. A betegségek tünetei ugyanis kivétel nélkül mélyebb értelmet hordoznak, a lelkünk üzeneteként arra ösztönöznek, hogy a teljességhez vezető útra lépve rátaláljunk önmagunkra.',
@@ -257,7 +257,7 @@ export class ProductService {
       id: 20,
       catId: 'cat-1',
       name: 'Agytisztítás',
-      author: 'Dr. Austin Perlmutter - Dr. David Perlmutter',
+      author: 'Dr. Austin Perlmutter',
       description:
         'Befolyás alatt élünk. A 21. században sokak anyagi érdeke fűződik ahhoz, hogy megszerezzék és megtartsák figyelmünket, például az okostelefonok által. Mi pedig engedünk nekik, mint ahogy engedünk az egészségtelen, de finom ételek csábításának, a kényelemnek, a gombnyomásra vásárlásnak. Miért van ez így? Nem, nem azért, mert lusták vagyunk. Hanem azért, mert kihasználják agyunk szerkezetét, mely a túlélésre lett programozva.',
       image: '../../assets/img/lifestyle/20.jpg',
@@ -269,7 +269,7 @@ export class ProductService {
     {
       id: 21,
       catId: 'cat-1',
-      name: 'Növényi étrend a teljes életért - Az orvos szemével',
+      name: 'Növényi étrend a teljes életért',
       author: 'Dr. Iller Barbara',
       description:
         'A teljes értékű növényi étrend ideális gyerekeknek, felnőtteknek, várandósoknak, szoptatás idején, időskorban, mindig. Ez a legjobb étrend minden életkorban."',
@@ -282,7 +282,7 @@ export class ProductService {
     {
       id: 22,
       catId: 'cat-1',
-      name: 'Ne függj senkitől - Az önmagunkkal való törődés alapjai',
+      name: 'Ne függj senkitől',
       author: 'Melody Beattie',
       description:
         'Meg kell érteni: mindenki csak saját magáért felelős. Az emberek úgy éreznek, ahogyan érezni akarnak; azt gondolják, amit gondolnak; azt teszik, amit hitük szerint tenniük kell; s csupán akkor változnak meg, ha belül készen állnak a változásra. Az egyetlen ember, akit valaha is megváltoztathatunk - saját magunk. Az egyetlen ember, akit jogunk van irányítani - mi magunk vagyunk.',
@@ -295,7 +295,7 @@ export class ProductService {
     {
       id: 23,
       catId: 'cat-1',
-      name: 'ZEN - Az egyszerű élet művészete - 100 zen gyakorlat a szebb és nyugalmasabb hétköznapokért',
+      name: 'ZEN - Az egyszerű élet művészete',
       author: 'Shunmyo Masuno',
       description:
         'Százféle információ zúdul ránk, felőrli napjainkat a szüntelen sietség és a jövőtől való szorongás. Nem szívesen gondolunk arra, hogy az élet egyszer véget ér, félresöpörjük a múlandóság apró jeleit.',
@@ -321,7 +321,7 @@ export class ProductService {
     {
       id: 25,
       catId: 'cat-1',
-      name: 'A gyógyulás kulcsa - A pszichoszomatika nagy könyve',
+      name: 'A gyógyulás kulcsa',
       author: 'Késmárki László',
       description:
         'A súlyos betegség egy lecke. Az Univerzum világossá kívánja tenni, hogy valamilyen érzés, gondolat vagy szokás megzavarja a test egyensúlyát és általában a természettel, az univerzummal való egyensúlyunkat.Ha az ego nem hallgat belső irányításának útmutatásaira, és nem cselekszik élettervével egybehangoltan, akkor könnyen abban az illúzióban ringathatja magát, hogy teljesen független.',
