@@ -1,0 +1,14 @@
+<div class="container p-5 justify-content-center">
+  <div class="row d-flex">
+    <div><img src="{{ product.image }}" class="" alt="book cover"></div>
+    <h3 class="mb-2 text-muted">{{ product.author }}</h3>
+    <h5>{{product.name}}</h5>
+  </div>
+    <h5 class="card-title" label="részletek">Fülszöveg: {{product.description}}</h5>
+    <div class="mt-auto"><h5 class="card-title ">Ár: {{product.price | currency}}</h5></div>
+    <h6 class="card-subtitle mb-2 text-muted">Készleten: {{ product.stock }} db.</h6>
+<div class="buttons m-5">
+    <a href="#" class="btn btn-success btn-block">Kosárba rakom!</a>
+  <button routerLink="/" class="btn btn-dark btn-block">Visszalépek a főoldalra!</button>
+</div>
+</div>
