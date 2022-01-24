@@ -1,28 +1,46 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Product } from 'src/app/model/product';
 
+let keyTemp: any = null;
+
 @Pipe({
   name: 'sort'
 })
+
 export class SortPipe implements PipeTransform {
-  keyTemp: any = null;
 
-  transform(productList: Product[], search: string, key: string): Product[] {
+  transform(productList: Product[], key: string): Product[] {
 
-    if (!Array.isArray(productList) || !search || !key) return productList;
+    if (!Array.isArray(productList) || !key) return productList;
 
-    if(key) {
-      if(key != this.keyTemp ){
-        this.keyTemp = key
-        return productList.sort((a, b) => a[key] - b[key])
+      if(key != keyTemp ) {
+        keyTemp = key
+
+        return productList.sort( (a, b) => {
+          if(typeof a[key] === "number" || "boolean"  && typeof b[key] === "number" || "boolean"  ) {
+            return a[key] - b[key]
+          }
+          if(typeof a[key] === "string" && typeof b[key] === "string" ) {
+            return a[key].localeCompare(b[key])
+          }
+        }
+        )
       }
 
-      if(key == this.keyTemp ){
-        this.keyTemp = null;
-        return productList.sort((a, b) => b[key] - a[key])
-      }
-    }
+      if(key == keyTemp ) {
+        keyTemp = null;
 
-    return productList
+        return productList.sort( (a, b) => {
+          if(typeof a[key] === "number" || "boolean"  && typeof b[key] === "number" || "boolean"  ) {
+            return b[key] - a[key]
+          }
+          if(typeof a[key] === "string" && typeof b[key] === "string" ) {
+            return b[key].localeCompare(a[key])
+          }
+        }
+        )
+      }
+      return productList
   }
+
 }
