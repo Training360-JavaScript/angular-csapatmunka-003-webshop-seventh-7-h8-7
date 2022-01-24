@@ -11,23 +11,27 @@ export class SortPipe implements PipeTransform {
 
   transform(productList: Product[], key: string): Product[] {
 
+    console.log(`SortPipe started: key, keytemp = `, key, keyTemp )
     if (!Array.isArray(productList) || !key) return productList;
 
-      if(key != keyTemp ) {
-        keyTemp = key
-
-        return productList.sort( (a, b) => {
-          if(typeof a[key] === "number" || "boolean"  && typeof b[key] === "number" || "boolean"  ) {
-            return a[key] - b[key]
-          }
-          if(typeof a[key] === "string" && typeof b[key] === "string" ) {
-            return a[key].localeCompare(b[key])
+    if(key != keyTemp ) {
+      keyTemp = key
+      console.log("keyTemp", keyTemp)
+      return productList.sort( (a, b) => {
+        if(typeof a[key] === "number" && typeof b[key] === "number" ) {
+          console.log("number", a[key])
+          return a[key] - b[key]
+        }
+        if(typeof a[key] == "string" && typeof b[key] == "string" ) {
+          console.log("string", a[key])
+          return a[key].toLowerCase().localeCompare(b[key].toLowerCase())
           }
         }
         )
       }
 
       if(key == keyTemp ) {
+        console.log("keyTemp", keyTemp);
         keyTemp = null;
 
         return productList.sort( (a, b) => {
@@ -35,7 +39,7 @@ export class SortPipe implements PipeTransform {
             return b[key] - a[key]
           }
           if(typeof a[key] === "string" && typeof b[key] === "string" ) {
-            return b[key].localeCompare(a[key])
+            return b[key].toLowerCase().localeCompare(a[key].toLowerCase())
           }
         }
         )
