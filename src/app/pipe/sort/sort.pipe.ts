@@ -29,18 +29,5 @@ export class SortPipe implements PipeTransform {
 
       if(key == keyTemp ) {
         keyTemp = null;
-
-        return productList.sort( (a, b) => {
-          if(typeof a[key] === "number" || "boolean"  && typeof b[key] === "number" || "boolean"  ) {
-            return b[key] - a[key]
-          }
-          if(typeof a[key] === "string" && typeof b[key] === "string" ) {
-            return b[key].localeCompare(a[key])
-          }
-        }
-        )
-      }
-      return productList
-  }
-
 }
+
