@@ -18,8 +18,12 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onChangeSort(data: string): void {
+  onClickSort(data: string): void {
     this.sortKey = data;
+  }
+  onChangeSearch(event: Event, filterKey: string): void {
+    this.search = (event.target as HTMLInputElement).value;
+    this.filterKey = filterKey;
   }
 
 }
