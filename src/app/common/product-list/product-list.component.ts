@@ -19,6 +19,7 @@ export class ProductListComponent implements OnInit {
   }
 
   onClickSort(data: string): void {
+    console.log("onClickSort", data)
     this.sortKey = data;
   }
   onChangeSearch(event: Event, filterKey: string): void {
