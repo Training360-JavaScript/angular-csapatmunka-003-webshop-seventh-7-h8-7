@@ -14,7 +14,7 @@ export class ProductService {
       description:
         'Mindegy, hogy vegán, ketogén, kis szénhidráttartalmú, kis glikémiás indexű (GI) étrendet vagy más speciális diétát követünk, esetleg csak több egészséges élelmiszert szeretnénk beilleszteni a szokásos étrendünkbe, ez a könyv nagyszerű segítség, hogy megtegyük a kezdő lépéseket az egészséges életmódhoz.',
       image: '../../assets/img/lifestyle/1.jpg',
-      price: 19.99,
+      price: 4560,
       stock: 20,
       featured: true,
       active: true,
@@ -27,7 +27,7 @@ export class ProductService {
       description:
         'Elérkezett egy új kezdet ideje, ahol a család már nem bilincs, ami gúzsba köt, hanem a föld, amelyből virágba szökkenünk, és az ég, ahol repülni tanulunk.Minden szülő nagyra törő álmokat dédelget a gyermekeivel kapcsolatban, de sok esetben ezek a remények irreális elvárásokká változnak. Mindez általában nagy nyomásként nehezedik a gyermekre, valódi károkat okozva és akadályoztatva a gyermek fejlődését.',
       image: '../../assets/img/lifestyle/2.jpg',
-      price: 29.99,
+      price: 6500,
       stock: 10,
       featured: true,
       active: true,
@@ -40,7 +40,7 @@ export class ProductService {
       description:
         'Natacha Calestrémé újságíró és rendező. Az egészség és a környezet szakértőjeként energiaadókkal, gyógyítókkal, médiumokkal és sámánokkal készített interjúkat. Számos kísérlet után ültette át agyakorlatba a szokatlan terapeuták technikáit, és megváltozott az élete.',
       image: '../../assets/img/lifestyle/3.jpg',
-      price: 39.99,
+      price: 3990,
       stock: 5,
       featured: true,
       active: true,
@@ -53,7 +53,7 @@ export class ProductService {
       description:
         'Rengeteg kérdés, ezernyi meggyőzőnek tűnő, zavaros, ellentmondásos tévhit! Az áltudomány, kattintásvadász címek és a celebek által ránk tukmált termékek korszakában könnyű megzavarodni, és bedőlni a divatos hiedelmeknek. Hiánypótló könyvében az óriási népszerűségnek és közbizalomnak örvendő Jen Gunter szülész-nőgyógyász eloszlatja a kártékony mítoszokat, és a nők kezébe adja nemi szervük egészségét',
       image: '../../assets/img/lifestyle/4.jpg',
-      price: 28.99,
+      price: 6500,
       stock: 20,
       featured: true,
       active: true,
@@ -66,7 +66,7 @@ export class ProductService {
       description:
         'Praktikus könyvünk tanácsokat ad, hogyan csökkentsük a hulladék mennyiségét. Ötletekkel szolgál, miképp kerüljük el a felesleges csomagolást, hogyan hasznosítsuk újra régi háztartási cikkeinket, és hogyan csökkentsük nagy mértékben az élelmiszer-pazarlást.',
       image: '../../assets/img/lifestyle/5.jpg',
-      price: 35.99,
+      price: 2300,
       stock: 20,
       featured: true,
       active: true,
@@ -79,7 +79,7 @@ export class ProductService {
       description:
         'Ez a tizenkét újabb szabály segíti az olvasót egy bátrabb, igazabb élethez, amelyben több értelmet fog találni. Az élet értelme nem más, mint az ismert dolgainkon való túllépés, nem más, mint az örökké változó világhoz való alkalmazkodás.',
       image: '../../assets/img/lifestyle/6.jpg',
-      price: 17.99,
+      price: 3450,
       stock: 20,
       featured: false,
       active: true,
@@ -92,7 +92,7 @@ export class ProductService {
       description:
         'Arra invitálja olvasóit, hogy nézzenek szembe a megszokás és a szexuális vágy elkerülhetetlen egységével és összefüggéseivel, és azt is eláruja, hogyan tudják megtartani (vagy újra felszítani) a vágy erejét a hosszútávú kapcsolatokban élő párok',
       image: '../../assets/img/lifestyle/7.jpg',
-      price: 26.99,
+      price: 4690,
       stock: 4,
       featured: false,
       active: true,
@@ -105,7 +105,7 @@ export class ProductService {
       description:
         'Akár kezdők, akár gyakorlottabbak vagyunk, A jóga tudománya segít a tudatos és eredményes jógagyakorlásban, a jóga anatómiájának megértésében és a szükséges technikai tudás fejlesztésében, hogy megfelelően végezhessük a gyakorlatokat, és ezáltal tökéletes harmóniába kerülhessen egymással a testünk és az elménk.',
       image: '../../assets/img/lifestyle/8.jpg',
-      price: 35.99,
+      price: 1990,
       stock: 13,
       featured: false,
       active: true,
@@ -118,7 +118,7 @@ export class ProductService {
       description:
         'A francia Stéphane Garnier hosszan tanulmányozta saját négylábú kedvencét, és az írót lenyűgözte a macskájából áradó elegancia és szabadságvágy. Ziggy, a lassan 15 éves macskaúrfi ihlette a Macskabölcsességet, az életmódtanácsokat tartalmazó, könnyed, humoros, de lényegre törő olvasmányt, amely támpontokat ad ahhoz, hogyan éljünk teljes, örömteli, önálló és szabad életet, akár egy macska.',
       image: '../../assets/img/lifestyle/9.jpg',
-      price: 33.99,
+      price: 3400,
       stock: 20,
       featured: false,
       active: true,
@@ -131,7 +131,7 @@ export class ProductService {
       description:
         'A könyv tizenévesek és fiatal felnőttek milliói számára jelentett iránytűt ahhoz, hogy valóban sikeres legyen az életük. Kézikönyvet arról, amit a fiataloknak tudniuk kell a helyes énképről, az egészséges kapcsolatokról, a csoportnyomásról, az elvek vállalásáról és arról, hogy miképp valósíthatják meg a céljaikat. Mindezt élvezetes stílusban tálalja, sok történettel, vicces retró rajzokkal és híres emberek inspiráló gondolataival',
       image: '../../assets/img/lifestyle/10.jpg',
-      price: 12.99,
+      price: 4550,
       stock: 20,
       featured: false,
       active: true,
@@ -144,7 +144,7 @@ export class ProductService {
       description:
         'Parkin arra vállalkozik, hogy megadja a szükséges lökést, hogy felhagyj a kifogásokkal, és végre azt tedd, amit szeretsz! Feltéve, ha tudod, mi az! Ha nem, az sem baj, John segít megtalálni. Sorra veszi mindazokat a gátakat, amelyekkel gyakran szembesülsz: Nem lehetek ilyen önző! vagy Sosem tudnék megélni abból, amit szeretek!. Segít legyőzni a legnagyobb visszatartó erőt: a félelmeidet.',
       image: '../../assets/img/lifestyle/11.jpg',
-      price: 15.99,
+      price: 2900,
       stock: 23,
       featured: false,
       active: true,
@@ -157,7 +157,7 @@ export class ProductService {
       description:
         'Dr. Ortiz természetes zenészi képességeit és pszichológusi képzettségét kombinálva dolgozta ki módszereit több mint két évtizeden át, ezeket alkalmazva fogadja el, amit érez, és dolgozzon azon, amit érezni szeretne! Semmit nem kell bemagolni - egyszerűen csak "játssza el", és minél előbb koncentrál a zenére, annál hamarabb fogja jól érezni magát!',
       image: '../../assets/img/lifestyle/12.jpg',
-      price: 17.99,
+      price: 5600,
       stock: 14,
       featured: false,
       active: true,
@@ -170,7 +170,7 @@ export class ProductService {
       description:
         'Oprah saját múltbéli történeteire és tapasztalataira támaszkodva elénk tárja, milyen sebezhetővé válhatunk a fiatalkorban átélt traumák és ártalmak hatására. A könyvön végigvonuló beszélgetésük során Oprah és dr. Perry az emberek, a különböző viselkedési formák és önmagunk megértésének témájára helyezi a hangsúlyt.',
       image: '../../assets/img/lifestyle/13.jpg',
-      price: 9.99,
+      price: 4570,
       stock: 5,
       featured: false,
       active: true,
@@ -183,7 +183,7 @@ export class ProductService {
       description:
         'Aki egyszer elkezdi gyakorolni valamelyik meditációs technikát, annak örökre megváltozik az élete - állítja a könyv szerzője, a belga Steven Laureys neurológus és kutató. Laureys a kómába esett emberek agyi működését vizsgálta tudósként, amikor találkozott a meditációval, és egyre több és több időt töltött vele.',
       image: '../../assets/img/lifestyle/14.jpg',
-      price: 25.99,
+      price: 5500,
       stock: 21,
       featured: false,
       active: true,
@@ -196,7 +196,7 @@ export class ProductService {
       description:
         'Pontos elemzés, mélyen együttérző könyv arról a lelki teherről, amellyel a modern kapitalizmus nehezedik rá azokra, akiket a saját képére formál. A Jöttünk, láttunk, elegünk van elengedhetetlenül fontos könyv korunk és saját magunk megértéséhez.',
       image: '../../assets/img/lifestyle/15.jpg',
-      price: 21.99,
+      price: 2450,
       stock: 32,
       featured: false,
       active: true,
@@ -209,7 +209,7 @@ export class ProductService {
       description:
         'A bantu nyelvekben gyökerező ubuntu kifejezés egy tradicionális afrikai életszemléletet takar, melynek középpontjában a mások iránt tanúsított emberség áll, és melynek üzenete a következőképpen foglalható össze: "Az ember csak mások által válik emberré."',
       image: '../../assets/img/lifestyle/16.jpg',
-      price: 19.99,
+      price: 3550,
       stock: 20,
       featured: false,
       active: true,
@@ -222,7 +222,7 @@ export class ProductService {
       description:
         'Miközben a világ az új koronavírus 2019 - más néven COVID-19 - pusztító hatásával küzd, dr. Greger nemcsak arra világít rá, hogy mit tehetünk a saját és a szeretteink védelmében egy pandémia alatt, hanem arra is, hogy az emberi társadalomnak muszáj lépéseket tennie annak érdekében, hogy csökkentse a jövőben ránk leselkedő még súlyosabb katasztrófák valószínűségét.',
       image: '../../assets/img/lifestyle/17.jpg',
-      price: 29.99,
+      price: 6500,
       stock: 10,
       featured: false,
       active: true,
@@ -235,7 +235,7 @@ export class ProductService {
       description:
         'A hagyományos japán kultúra az élethez való tudatos hozzáállásról ismert. A béke és az inspiráció forrásává válhat az Ön számára, akár az ikigaira (az értelem keresése) összpontosít, vagy például az ikebanával (a virágrendezés művészete) foglalatoskodik. Gondolkodjon el az elveken, hogyan lehet megnyugvást találni, és kizárni életünkből a lényegtelen dolgokat.',
       image: '../../assets/img/lifestyle/18.jpg',
-      price: 39.99,
+      price: 3500,
       stock: 5,
       featured: false,
       active: true,
@@ -248,7 +248,7 @@ export class ProductService {
       description:
         'Az út a teljességhez azokhoz szól, akik valóban szembe akarnak és mernek nézni önmagukkal - betegségükkel és azzal, amiről ez a betegség árulkodik. A betegségek tünetei ugyanis kivétel nélkül mélyebb értelmet hordoznak, a lelkünk üzeneteként arra ösztönöznek, hogy a teljességhez vezető útra lépve rátaláljunk önmagunkra.',
       image: '../../assets/img/lifestyle/19.jpg',
-      price: 28.99,
+      price: 4550,
       stock: 20,
       featured: false,
       active: true,
@@ -261,7 +261,7 @@ export class ProductService {
       description:
         'Befolyás alatt élünk. A 21. században sokak anyagi érdeke fűződik ahhoz, hogy megszerezzék és megtartsák figyelmünket, például az okostelefonok által. Mi pedig engedünk nekik, mint ahogy engedünk az egészségtelen, de finom ételek csábításának, a kényelemnek, a gombnyomásra vásárlásnak. Miért van ez így? Nem, nem azért, mert lusták vagyunk. Hanem azért, mert kihasználják agyunk szerkezetét, mely a túlélésre lett programozva.',
       image: '../../assets/img/lifestyle/20.jpg',
-      price: 35.99,
+      price: 3500,
       stock: 20,
       featured: false,
       active: true,
@@ -274,7 +274,7 @@ export class ProductService {
       description:
         'A teljes értékű növényi étrend ideális gyerekeknek, felnőtteknek, várandósoknak, szoptatás idején, időskorban, mindig. Ez a legjobb étrend minden életkorban."',
       image: '../../assets/img/lifestyle/21.jpg',
-      price: 17.99,
+      price: 2690,
       stock: 20,
       featured: false,
       active: true,
@@ -287,7 +287,7 @@ export class ProductService {
       description:
         'Meg kell érteni: mindenki csak saját magáért felelős. Az emberek úgy éreznek, ahogyan érezni akarnak; azt gondolják, amit gondolnak; azt teszik, amit hitük szerint tenniük kell; s csupán akkor változnak meg, ha belül készen állnak a változásra. Az egyetlen ember, akit valaha is megváltoztathatunk - saját magunk. Az egyetlen ember, akit jogunk van irányítani - mi magunk vagyunk.',
       image: '../../assets/img/lifestyle/22.jpg',
-      price: 26.99,
+      price: 3300,
       stock: 4,
       featured: false,
       active: true,
@@ -300,7 +300,7 @@ export class ProductService {
       description:
         'Százféle információ zúdul ránk, felőrli napjainkat a szüntelen sietség és a jövőtől való szorongás. Nem szívesen gondolunk arra, hogy az élet egyszer véget ér, félresöpörjük a múlandóság apró jeleit.',
       image: '../../assets/img/lifestyle/23.jpg',
-      price: 35.99,
+      price: 5000,
       stock: 13,
       featured: false,
       active: true,
@@ -313,7 +313,7 @@ export class ProductService {
       description:
         'A táplálkozás terén az áttörések korszakát éljük, ami egyedülálló lehetőséget biztosít számunkra, hogy szuperegészségesek legyünk; vagy élhetünk az elképzelhető legrosszabb étrenden. Rajtunk áll, mit választunk.',
       image: '../../assets/img/lifestyle/24.jpg',
-      price: 33.99,
+      price: 4560,
       stock: 20,
       featured: false,
       active: true,
@@ -326,7 +326,7 @@ export class ProductService {
       description:
         'A súlyos betegség egy lecke. Az Univerzum világossá kívánja tenni, hogy valamilyen érzés, gondolat vagy szokás megzavarja a test egyensúlyát és általában a természettel, az univerzummal való egyensúlyunkat.Ha az ego nem hallgat belső irányításának útmutatásaira, és nem cselekszik élettervével egybehangoltan, akkor könnyen abban az illúzióban ringathatja magát, hogy teljesen független.',
       image: '../../assets/img/lifestyle/25.jpg',
-      price: 12.99,
+      price: 3800,
       stock: 20,
       featured: false,
       active: true,
