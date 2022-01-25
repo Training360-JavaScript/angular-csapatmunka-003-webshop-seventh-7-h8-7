@@ -1,28 +1,49 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Product } from 'src/app/model/product';
 
+let keyTemp: any = null;
+
 @Pipe({
   name: 'sort'
 })
+
 export class SortPipe implements PipeTransform {
-  keyTemp: any = null;
 
-  transform(productList: Product[], search: string, key: string): Product[] {
+  transform(productList: Product[], key: string): Product[] {
 
-    if (!Array.isArray(productList) || !search || !key) return productList;
+    console.log(`SortPipe started: key, keytemp = `, key, keyTemp )
+    if (!Array.isArray(productList) || !key) return productList;
 
-    if(key) {
-      if(key != this.keyTemp ){
-        this.keyTemp = key
-        return productList.sort((a, b) => a[key] - b[key])
+    if(key != keyTemp ) {
+      keyTemp = key
+      console.log("keyTemp", keyTemp)
+      return productList.sort( (a, b) => {
+        if(typeof a[key] === "number" && typeof b[key] === "number" ) {
+          console.log("number", a[key])
+          return a[key] - b[key]
+        }
+        if(typeof a[key] == "string" && typeof b[key] == "string" ) {
+          console.log("string", a[key])
+          return a[key].toLowerCase().localeCompare(b[key].toLowerCase())
+          }
+        }
+        )
       }
 
-      if(key == this.keyTemp ){
-        this.keyTemp = null;
-        return productList.sort((a, b) => b[key] - a[key])
-      }
-    }
+      if(key == keyTemp ) {
+        console.log("keyTemp", keyTemp);
+        keyTemp = null;
 
-    return productList
-  }
+        return productList.sort( (a, b) => {
+          if(typeof a[key] === "number" || "boolean"  && typeof b[key] === "number" || "boolean"  ) {
+            return b[key] - a[key]
+          }
+          if(typeof a[key] === "string" && typeof b[key] === "string" ) {
+            return b[key].toLowerCase().localeCompare(a[key].toLowerCase())
+          }
+        }
+        )
+      }
+      return productList
+}
 }

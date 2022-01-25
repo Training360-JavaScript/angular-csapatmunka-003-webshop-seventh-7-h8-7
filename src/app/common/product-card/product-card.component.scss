@@ -6,3 +6,9 @@
  }
 }
 
+.card-link {
+  &:hover {
+    text-shadow: 5px 5px 5px  rgb(138, 133, 133);
+
+  }
+}
