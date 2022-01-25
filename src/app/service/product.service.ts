@@ -269,7 +269,7 @@ export class ProductService {
     {
       "id": 21,
       "catId": "cat-1",
-      "name": "Növényi étrend a teljes életért - Az orvos szemével",
+      "name": "Növényi étrend a teljes életért",
       "author": "Dr. Iller Barbara",
       "description":
         "A teljes értékű növényi étrend ideális gyerekeknek, felnőtteknek, várandósoknak, szoptatás idején, időskorban, mindig. Ez a legjobb étrend minden életkorban.",
@@ -282,7 +282,7 @@ export class ProductService {
     {
       "id": 22,
       "catId": "cat-1",
-      "name": "Ne függj senkitől - Az önmagunkkal való törődés alapjai",
+      "name": "Ne függj senkitől",
       "author": "Melody Beattie",
       "description":
         "Meg kell érteni: mindenki csak saját magáért felelős. Az emberek úgy éreznek, ahogyan érezni akarnak; azt gondolják, amit gondolnak; azt teszik, amit hitük szerint tenniük kell; s csupán akkor változnak meg, ha belül készen állnak a változásra. Az egyetlen ember, akit valaha is megváltoztathatunk - saját magunk. Az egyetlen ember, akit jogunk van irányítani - mi magunk vagyunk.",
@@ -295,7 +295,7 @@ export class ProductService {
     {
       "id": 23,
       "catId": "cat-1",
-      "name": "ZEN - Az egyszerű élet művészete - 100 zen gyakorlat a szebb és nyugalmasabb hétköznapokért",
+      "name": "ZEN - Az egyszerű élet művészete",
       "author": "Shunmyo Masuno",
       "description":
         "Százféle információ zúdul ránk, felőrli napjainkat a szüntelen sietség és a jövőtől való szorongás. Nem szívesen gondolunk arra, hogy az élet egyszer véget ér, félresöpörjük a múlandóság apró jeleit.",
@@ -321,7 +321,7 @@ export class ProductService {
     {
       "id": 25,
       "catId": "cat-1",
-      "name": "A gyógyulás kulcsa - A pszichoszomatika nagy könyve",
+      "name": "A gyógyulás kulcsa",
       "author": "Késmárki László",
       "description":
         "A súlyos betegség egy lecke. Az Univerzum világossá kívánja tenni, hogy valamilyen érzés, gondolat vagy szokás megzavarja a test egyensúlyát és általában a természettel, az univerzummal való egyensúlyunkat.Ha az ego nem hallgat belső irányításának útmutatásaira, és nem cselekszik élettervével egybehangoltan, akkor könnyen abban az illúzióban ringathatja magát, hogy teljesen független.",
