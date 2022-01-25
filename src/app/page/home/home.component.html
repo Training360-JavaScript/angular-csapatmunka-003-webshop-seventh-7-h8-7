@@ -2,5 +2,5 @@
 <app-product-pager  [productList]="productList | featured: true">
 </app-product-pager>
 <h3 class="my-4">Akciós kínálatunk!</h3>
-<app-product-pager [productList]="productList">
+<app-product-pager [productList]="productList | category: 'cat-2' | featured: false">
 </app-product-pager>

@@ -14,6 +14,9 @@ import { FilterPipe } from './pipe/filter/filter.pipe';
 import { SortPipe } from './pipe/sort/sort.pipe';
 import { CategoryPipe } from './pipe/category/category.pipe';
 import { FeaturedPipe } from './pipe/featured/featured.pipe';
+import { CurrencyPipe } from './pipe/currency/currency.pipe';
+import { FooterComponent } from './common/footer/footer.component';
+import { ProductDetailsComponent } from './common/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { FeaturedPipe } from './pipe/featured/featured.pipe';
     FilterPipe,
     SortPipe,
     CategoryPipe,
-    FeaturedPipe
+    FeaturedPipe,
+    CurrencyPipe,
+    FooterComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

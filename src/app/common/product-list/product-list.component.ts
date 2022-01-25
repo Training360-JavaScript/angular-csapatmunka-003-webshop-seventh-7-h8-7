@@ -8,12 +8,23 @@ import { ProductService } from 'src/app/service/product.service'
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent implements OnInit {
-
+  search: string = '';
+  sortKey: string = '';
+  filterKey: string = '';
   @Input() products: Product[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClickSort(data: string): void {
+    console.log("onClickSort", data)
+    this.sortKey = data;
+  }
+  onChangeSearch(event: Event, filterKey: string): void {
+    this.search = (event.target as HTMLInputElement).value;
+    this.filterKey = filterKey;
   }
 
 }
