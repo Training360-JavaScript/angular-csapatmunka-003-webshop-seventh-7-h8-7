@@ -1,1 +1,32 @@
-<p>cat02 works!</p>
+<div class="container">
+  <div class="col-12  d-flex justify-content-around">
+    <div class="text-center text-uppercase m-5">
+      <h1>Szépirodalom</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="col-12  d-flex justify-content-around">
+    <div class="text-center text-uppercase m-5">
+      <h3>A kategória kiemelt ajánlatai </h3>
+    </div>
+  </div>
+</div>
+
+<app-product-pager [productList]="productList | category: 'cat-2'" >
+  
+</app-product-pager>
+
+<div class="container">
+  <div class="col-12  d-flex justify-content-around">
+    <div class="text-center text-uppercase m-5">
+      <h3>További könyvajánlatunk</h3>
+    </div>
+  </div>
+</div>
+
+
+<app-product-list
+    [products]="productList | category: 'cat-1'">
+</app-product-list>
