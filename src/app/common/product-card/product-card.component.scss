@@ -12,3 +12,11 @@
 
   }
 }
+
+.cover-thumbnail {
+ &:hover {
+
+   transform: scale(2, 2) translateY(30px);
+   transition: transform .3s ease-out;
+ }
+}
