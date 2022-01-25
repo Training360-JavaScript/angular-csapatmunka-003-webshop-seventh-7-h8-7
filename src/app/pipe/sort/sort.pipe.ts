@@ -35,7 +35,7 @@ export class SortPipe implements PipeTransform {
         keyTemp = null;
 
         return productList.sort( (a, b) => {
-          if(typeof a[key] === "number" || "boolean"  && typeof b[key] === "number" || "boolean"  ) {
+          if(typeof a[key] === "number" && typeof b[key] === "number") {
             return b[key] - a[key]
           }
           if(typeof a[key] === "string" && typeof b[key] === "string" ) {
