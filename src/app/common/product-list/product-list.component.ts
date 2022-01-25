@@ -1,13 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Product } from 'src/app/model/product';
-import { ProductService } from 'src/app/service/product.service'
 
 let keyTemp: any = null;
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.scss']
+  styleUrls: ['./product-list.component.scss'],
 })
 export class ProductListComponent implements OnInit {
   search: string = '';
@@ -15,10 +14,9 @@ export class ProductListComponent implements OnInit {
   filterKey: string = '';
   @Input() products: Product[] = [];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onClickSort(data: string): void {
     this.sortKey = data;
@@ -30,36 +28,32 @@ export class ProductListComponent implements OnInit {
   }
 
   shorting(productList: Product[], key: string): Product[] {
-
     if (!Array.isArray(productList) || !key) return productList;
 
-    if(key != keyTemp ) {
-      keyTemp = key
-      return productList.sort( (a, b) => {
-        if(typeof a[key] === "number" && typeof b[key] === "number" ) {
-          return a[key] - b[key]
+    if (key != keyTemp) {
+      keyTemp = key;
+      return productList.sort((a, b) => {
+        if (typeof a[key] === 'number' && typeof b[key] === 'number') {
+          return a[key] - b[key];
         }
-        if(typeof a[key] == "string" && typeof b[key] == "string" ) {
-          return a[key].toLowerCase().localeCompare(b[key].toLowerCase())
-          }
+        if (typeof a[key] == 'string' && typeof b[key] == 'string') {
+          return a[key].toLowerCase().localeCompare(b[key].toLowerCase());
         }
-        )
-      }
+      });
+    }
 
-      if(key == keyTemp ) {
-        keyTemp = null;
+    if (key == keyTemp) {
+      keyTemp = null;
 
-        return productList.sort( (a, b) => {
-          if(typeof a[key] === "number" && typeof b[key] === "number"  ) {
-            return b[key] - a[key]
-          }
-          if(typeof a[key] === "string" && typeof b[key] === "string" ) {
-            return b[key].toLowerCase().localeCompare(a[key].toLowerCase())
-          }
+      return productList.sort((a, b) => {
+        if (typeof a[key] === 'number' && typeof b[key] === 'number') {
+          return b[key] - a[key];
         }
-        )
-      }
-      return productList
-}
-
+        if (typeof a[key] === 'string' && typeof b[key] === 'string') {
+          return b[key].toLowerCase().localeCompare(a[key].toLowerCase());
+        }
+      });
+    }
+    return productList;
+  }
 }
