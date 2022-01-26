@@ -571,8 +571,8 @@ export class ProductService {
       "name": "Állatfarm ",
       "author": "George Orwell",
       "description":
-        "Minden állat egyenlő? Ugyan már. Vannak köztük egyenlőbbek is. Orwell 1943-44-ben írott műve minden elnyomó, totalitárius rendszerre ráillik. Egy angol major a színhely, ahol az állatok a disznók vezetésével megdöntik az Ember uralmát.,
-      "image": "../../assets/img/literature/19.jpg",
+        "Minden állat egyenlő? Ugyan már. Vannak köztük egyenlőbbek is. Orwell 1943-44-ben írott műve minden elnyomó, totalitárius rendszerre ráillik. Egy angol major a színhely, ahol az állatok a disznók vezetésével megdöntik az Ember uralmát.",
+      "image":"../../assets/img/literature/19.jpg",
       "price": 4550,
       "stock": 20,
       "featured": false,
