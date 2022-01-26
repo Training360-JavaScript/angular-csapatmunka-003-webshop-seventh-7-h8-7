@@ -12,13 +12,16 @@ import { HomeComponent } from './page/home/home.component';
 import { ProductCardComponent } from './common/product-card/product-card.component';
 import { ProductPagerComponent } from './common/product-pager/product-pager.component';
 import { ProductListComponent } from './common/product-list/product-list.component';
+import { FooterComponent } from './common/footer/footer.component';
+import { ProductDetailsComponent } from './common/product-details/product-details.component';
+
 import { FilterPipe } from './pipe/filter/filter.pipe';
 import { SortPipe } from './pipe/sort/sort.pipe';
 import { CategoryPipe } from './pipe/category/category.pipe';
 import { FeaturedPipe } from './pipe/featured/featured.pipe';
 import { CurrencyPipe } from './pipe/currency/currency.pipe';
-import { FooterComponent } from './common/footer/footer.component';
-import { ProductDetailsComponent } from './common/product-details/product-details.component';
+import { ShufflePipe } from './pipe/shuffle.pipe';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +39,8 @@ import { ProductDetailsComponent } from './common/product-details/product-detail
     FeaturedPipe,
     CurrencyPipe,
     FooterComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ShufflePipe
   ],
   imports: [
     BrowserModule,
