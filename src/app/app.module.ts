@@ -20,6 +20,7 @@ import { SortPipe } from './pipe/sort/sort.pipe';
 import { CategoryPipe } from './pipe/category/category.pipe';
 import { FeaturedPipe } from './pipe/featured/featured.pipe';
 import { CurrencyPipe } from './pipe/currency/currency.pipe';
+import { ShufflePipe } from './pipe/shuffle.pipe';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { CurrencyPipe } from './pipe/currency/currency.pipe';
     FeaturedPipe,
     CurrencyPipe,
     FooterComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ShufflePipe
   ],
   imports: [
     BrowserModule,
