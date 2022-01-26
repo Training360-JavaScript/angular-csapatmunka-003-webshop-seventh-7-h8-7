@@ -386,7 +386,7 @@ export class ProductService {
     {
       "id": 30,
       "catId": "cat-2",
-      "name": "Vaskirályné"
+      "name": "Vaskirályné",
       "author": "Joanna Courtney",
       "description":
         "Vasököl - bársonykesztyűben: Cordelia története Kr. e. 500 - Lear az Anyaistennő végtelen támogatását élvezi, legnagyobb boldogsága három lánygyermeke, akiknek a szövetségével biztosítva látja törzse, a coritanok vérvonalát.",
