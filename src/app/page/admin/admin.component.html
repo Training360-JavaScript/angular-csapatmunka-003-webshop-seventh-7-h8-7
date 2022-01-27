@@ -1,1 +1,51 @@
-<p>admin works!</p>
+<div class="row">
+  <div class="col-12">
+    <table class="table table-dark table-striped mt-3">
+      <thead>
+        <tr>
+          <th> #
+            <button class="btn btn-dark" (click)="onClickSort('id')">
+              <i class="fa fa-sort"></i>
+            </button>
+          </th>
+          <th> Name
+            <button class="btn btn-dark" (click)="onClickSort('name')">
+              <i class="fa fa-sort"></i> </button>
+            </th>
+          <th> Author
+            <button class="btn btn-dark" (click)="onClickSort('author')">
+            <i class="fa fa-sort"></i>
+            </button>
+          </th>
+          <th> Category
+            <button class="btn btn-dark" (click)="onClickSort('catId')">
+              <i class="fa fa-sort"></i>
+            </button>
+          </th>
+          <th> Price
+            <button class="btn btn-dark" (click)="onClickSort('price')">
+              <i class="fa fa-sort"></i>
+            </button>
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of list$ | async | sort:sortKey | filter:search:filterKey">
+          <td> {{ product.id }} </td>
+          <td> {{ product.name }} </td>
+          <td> {{ product.author }} </td>
+          <td> {{ product.catId }} </td>
+          <td> {{ product.price | currency }} </td>
+
+          <td>
+            <button [routerLink]="['/', 'product-edit', product.id]"
+            class="btn btn-info">
+            <i class="fa fa-pencil"></i>
+          </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
