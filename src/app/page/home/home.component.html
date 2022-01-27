@@ -1,6 +1,6 @@
 <h3 class="mb-5 text-center">Kiemelt ajánlatunk</h3>
-<app-product-pager  [productList]="productList | featured: true">
+<app-product-pager  [productList]="productList | category: 'cat-2' | featured: true">
 </app-product-pager>
 <h3 class="my-4 text-center">Akciós kínálatunk</h3>
-<app-product-pager [productList]="productList | featured: false">
+<app-product-pager [productList]="productList | shuffle">
 </app-product-pager>
