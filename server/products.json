@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "catId": "cat-1",
+      "name": "Természetes gyulladás - csökkentők",
+      "author": "Lizzie Streit",
+      "description":
+        "Mindegy, hogy vegán, ketogén, kis szénhidráttartalmú, kis glikémiás indexű (GI) étrendet vagy más speciális diétát követünk, esetleg csak több egészséges élelmiszert szeretnénk beilleszteni a szokásos étrendünkbe, ez a könyv nagyszerű segítség, hogy megtegyük a kezdő lépéseket az egészséges életmódhoz.",
+      "image": "../../assets/img/lifestyle/1.jpg",
+      "price": 4560,
+      "stock": 20,
+      "featured": false,
+      "active": true
+    },
+    {
+      "id": 2,
+      "catId": "cat-1",
+      "name": "A tudatos család",
+      "author": "Dr. Shefali Tsabary",
+      "description":
+        "Elérkezett egy új kezdet ideje, ahol a család már nem bilincs, ami gúzsba köt, hanem a föld, amelyből virágba szökkenünk, és az ég, ahol repülni tanulunk.Minden szülő nagyra törő álmokat dédelget a gyermekeivel kapcsolatban, de sok esetben ezek a remények irreális elvárásokká változnak. Mindez általában nagy nyomásként nehezedik a gyermekre, valódi károkat okozva és akadályoztatva a gyermek fejlődését.",
+      "image": "../../assets/img/lifestyle/2.jpg",
+      "price": 6500,
+      "stock": 10,
+      "featured": true,
+      "active": true
+    }
+
+  ]
+}
