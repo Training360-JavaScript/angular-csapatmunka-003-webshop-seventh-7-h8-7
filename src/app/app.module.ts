@@ -21,6 +21,8 @@ import { CategoryPipe } from './pipe/category/category.pipe';
 import { FeaturedPipe } from './pipe/featured/featured.pipe';
 import { CurrencyPipe } from './pipe/currency/currency.pipe';
 import { ShufflePipe } from './pipe/shuffle.pipe';
+import { AdminComponent } from './page/admin/admin.component';
+import { DataEditorComponent } from './common/data-editor/data-editor.component';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { ShufflePipe } from './pipe/shuffle.pipe';
     CurrencyPipe,
     FooterComponent,
     ProductDetailsComponent,
-    ShufflePipe
+    ShufflePipe,
+    AdminComponent,
+    DataEditorComponent
   ],
   imports: [
     BrowserModule,

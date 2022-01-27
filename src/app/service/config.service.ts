@@ -17,6 +17,7 @@ export class ConfigService {
     {text: 'Főoldal', link: '/', icon: 'home'},
     {text: 'Életmód', link: '/eletmod'},
     {text: 'Szépirodalom', link: '/szepirodalom'},
+    {text: 'Admin', link: '/admin'}
   ];
 
   constructor() { }
