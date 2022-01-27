@@ -10,6 +10,10 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class AdminComponent implements OnInit {
 
+  products: Product = new Product();
+  search: string = '';
+  sortKey: string = '';
+  filterKey: string = '';
   list$: Observable<Product[]> = this.productService.getAll2()
 
   constructor(
@@ -17,6 +21,14 @@ export class AdminComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+  }
+
+  onClickSort(data: string): void {
+    this.sortKey = data;
+  }
+  onChangeSearch(event: Event, filterKey: string): void {
+    this.search = (event.target as HTMLInputElement).value;
+    this.filterKey = filterKey;
   }
 
 }
