@@ -1,5 +1,8 @@
-<div class="card text-center mb-2 p-2" style="width: 180px; height: 420px">
-  <div class="cover-thumbnail"><img src="{{ product.image }}" width="100px" height="140px" class="" alt="book cover"></div>
+<div class="card text-center mb-2 p-2" style="width: 180px; height: 400px">
+  <div [routerLink]="['/books/', product.id]" class="cover-thumbnail">
+    <img src="{{ product.image }}" width="100px" height="140px" alt="book cover">
+  </div>
+
   <div class="card-body px-0 pb-0 d-flex flex-column">
 
     <h5 class="card-title ">{{ product.name }}</h5>
@@ -12,7 +15,7 @@
     <div>
       <h5 class="card-title ">{{ product.price | currency }}</h5>
     </div>
-    <h6 class="card-subtitle mb-2 text-muted">Készlet: {{ product.stock }} </h6>
+    <!-- <h6 class="card-subtitle mb-2 text-muted">Készlet: {{ product.stock }} </h6> -->
 
 
     <a href="#" class="btn btn-secondary btn-block">
