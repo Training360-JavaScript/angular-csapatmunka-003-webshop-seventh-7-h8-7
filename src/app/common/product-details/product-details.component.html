@@ -1,20 +1,24 @@
-<div class="row">
-  <! --- <div *ngIf="product$ | async as product" class="col-6 offset-3"> --->
-    <div class="container p-5 justify-content-center">
-      <div class="row d-flex">
-        <div><img src="{{ product.image }}" class="" alt="book cover"></div>
-        <h3 class="mb-2 text-muted">{{ product.author }}</h3>
-        <h5>{{product.name}}</h5>
+<div class="book-container">
+  <div class="row d-flex">
+    <div *ngIf="product$ | async as product" class="col-8 offset-2">
+      <div class="p-5 text-center ">
+        <img class="cover" src="{{ product.image }}" alt="book cover">
       </div>
-        <h5 class="card-title" label="részletek">Fülszöveg: {{product.description}}</h5>
-        <div class="mt-auto"><h5 class="card-title ">Ár: {{product.price | currency}}</h5></div>
-        <h6 class="card-subtitle mb-2 text-muted">Készleten: {{ product.stock }} db.</h6>
-    <div class="buttons m-5">
+      <div class="text-center">
+        <h3>{{product.name}}</h3>
+        <h3 class="text-muted">{{ product.author }}</h3>
+      </div>
+      <div class="pt-3">
+        <p>{{product.description}}</p>
+      </div>
+      <div class="py-2">
+        <h5 class="">Ár: {{product.price | currency}} </h5>
+      </div>
+      <h6 class="text-muted">Készleten: {{ product.stock }} db.</h6>
+      <div class="buttons m-5">
         <a href="#" class="btn btn-success btn-block">Kosárba rakom!</a>
-      <button routerLink="/" class="btn btn-dark btn-block">Visszalépek a főoldalra!</button>
+        <button routerLink="/" class="btn btn-dark btn-block">Visszalépek a főoldalra!</button>
+      </div>
     </div>
-    </div>
-<! ---  </div> --->
+  </div>
 </div>
-
-
