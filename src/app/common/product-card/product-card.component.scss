@@ -15,7 +15,7 @@
 .cover-thumbnail {
   &:hover {
     cursor: pointer;
-    transform: scale(2, 2) translateY(30px);
+    transform: scale(2, 2) translateY(26px);
     transition: transform 0.3s ease-out;
   }
 }

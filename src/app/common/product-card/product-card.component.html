@@ -1,9 +1,9 @@
-<div class="card text-center mb-2 p-2" style="width: 180px; height: 400px">
-  <div [routerLink]="['/books/', product.id]" class="cover-thumbnail">
+<div class="card text-center mb-4 p-2" style="width: 200px; height: 420px">
+  <div [routerLink]="['/books/', product.id]" class="cover-thumbnail pt-2">
     <img src="{{ product.image }}" width="100px" height="140px" alt="book cover">
   </div>
 
-  <div class="card-body px-0 pb-0 d-flex flex-column">
+  <div class="card-body px-2 pb-2 d-flex flex-column">
 
     <h5 class="card-title ">{{ product.name }}</h5>
     <h6 class="card-subtitle mb-2 text-muted">{{ product.author }}</h6>
