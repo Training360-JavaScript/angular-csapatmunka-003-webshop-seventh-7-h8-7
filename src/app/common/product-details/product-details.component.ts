@@ -2,6 +2,7 @@ import { Product } from 'src/app/model/product';
 import { ProductService } from 'src/app/service/product.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Observable, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-product-details',
@@ -9,7 +10,9 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-details.component.scss'],
 })
 export class ProductDetailsComponent implements OnInit {
-  product!: Product;
+  product$: Observable<Product> = this.activatedRoute.params.pipe(
+    switchMap( params => this.productService.getOne(params['id']))
+  )
 
   constructor(
     private activatedRoute: ActivatedRoute,
