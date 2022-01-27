@@ -1,9 +1,11 @@
 import { ProductDetailsComponent } from './common/product-details/product-details.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { Cat01Component } from './page/cat01/cat01.component';
 import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
+import { AdminComponent } from './page/admin/admin.component';
 
 const routes: Routes = [
   {
@@ -17,6 +19,10 @@ const routes: Routes = [
   {
     path: 'szepirodalom',
     component: Cat02Component,
+  },
+  {
+    path: 'admin',
+    component: AdminComponent,
   },
   {
     path: 'books/:id',
