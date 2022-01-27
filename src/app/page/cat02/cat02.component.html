@@ -14,8 +14,8 @@
   </div>
 </div>
 
-<app-product-pager [productList]="(productList$ | async)! | category: 'cat-2'" >
-
+<app-product-pager
+  [productList]="(productList$ | async)! | featured: true | category: 'cat-2'" >
 </app-product-pager>
 
 <div class="container">
