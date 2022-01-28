@@ -6,6 +6,7 @@ export class Product {
   author: string = 'John Doe';
   description: string = '';
   image?: string = '';
+  previousPrice?: number = 0;
   price: number = 0;
   stock: number = 0;
   featured: boolean = false;
