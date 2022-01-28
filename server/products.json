@@ -1,5 +1,6 @@
 {
-  "products": [{
+  "products": [
+    {
       "id": 1,
       "catId": "cat-1",
       "name": "Természetes gyulladás - csökkentők",
@@ -57,7 +58,8 @@
       "price": 2300,
       "stock": 20,
       "featured": true,
-      "active": true
+      "active": true,
+      "cover": "../../assets/img/lifestyle/5.jpg"
     },
     {
       "id": 6,
@@ -336,7 +338,8 @@
       "price": 3990,
       "stock": 5,
       "featured": false,
-      "active": true
+      "active": true,
+      "time": "cat-2"
     },
     {
       "id": 29,
@@ -413,7 +416,7 @@
     {
       "id": 35,
       "catId": "cat-2",
-      "name": ". Sosem elég",
+      "name": "Sosem elég",
       "author": "Marc Elsberg",
       "description": "Az emberek világszerte forronganak. A fenyegető megszorító csomagok, a tömeges munkanélküliség és az éhezés ellen tüntetnek - az új gazdasági válság következményei ellen, amely bankokat, cégeket és államokat juttat csődbe. Kiélesednek a nemzeti és nemzetközi konfliktusok.",
       "image": "../../assets/img/literature/10.jpg",
