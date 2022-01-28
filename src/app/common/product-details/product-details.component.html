@@ -11,7 +11,14 @@
       <div class="pt-3">
         <p>{{product.description}}</p>
       </div>
-      <div class="py-2 text-center">
+      <div *ngIf="product.previousPrice" class="py-2 text-center" >
+        <h5 class="card-subtitle text-muted fullprice">{{ product.previousPrice | currency }}</h5>
+        <div class="badge badge-danger" style="width: 6rem;">
+          Akció!
+        </div>
+      </div>
+
+      <div class="text-center">
         <h5 class="">Ár: {{product.price | currency}} </h5>
       </div>
       <h6 class="text-muted">Készleten: {{ product.stock }} db.</h6>
