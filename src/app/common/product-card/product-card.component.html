@@ -1,16 +1,22 @@
-<div class="card text-center mb-4 p-2" style="width: 200px; height: 420px">
+<div class="card text-center mb-4 p-2" style="width: 200px; height: 450px">
   <div [routerLink]="['/books/', product.id]" class="cover-thumbnail pt-2">
     <img src="{{ product.image }}" width="100px" height="140px" alt="book cover">
   </div>
 
   <div class="card-body px-2 pb-2 d-flex flex-column">
 
-    <h5 class="card-title ">{{ product.name }}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{ product.author }}</h6>
-    <h6 class="mt-auto">
+    <h5 class="card-title">{{ product.name }}</h5>
+    <h6 class="card-title mb-2 text-muted">{{ product.author }}</h6>
+    <h6 class="mt-auto" title={{product.description}}>
       <a [routerLink]="['/books/', product.id]" class="card-link text-muted">részletek...</a>
     </h6>
     <!-- <p class="card-text">{{product.description}}</p> -->
+    <div *ngIf="product.previousPrice">
+      <h5 class="card-subtitle text-muted fullprice">{{ product.previousPrice | currency }}</h5>
+      <div class="badge badge-danger" style="width: 6rem;">
+        Akció!
+      </div>
+    </div>
 
     <div>
       <h5 class="card-title ">{{ product.price | currency }}</h5>
@@ -20,6 +26,6 @@
 
     <a href="#" class="btn btn-secondary btn-block">
       <i class="fa fa-shopping-cart"></i>
-       Kosárba</a>
+      Kosárba</a>
   </div>
 </div>
