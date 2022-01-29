@@ -1,6 +1,14 @@
-<div class="row">
+<div class="fixed-top mt-5 text-center fixheader">
+  <h3>Adminisztrációs oldal</h3>
+  <button [routerLink]="['/', 'product-create']" class="btn btn-success btn-block">
+    <i class="fa fa-plus-square"></i>
+    Új tétel létrehozása
+  </button>
+</div>
+
+<div class="row mt-5">
   <div class="col-12">
-    <table class="table table-dark table-striped mt-3">
+    <table class="table table-dark table-striped mt-5">
       <thead>
         <tr>
           <th> #
