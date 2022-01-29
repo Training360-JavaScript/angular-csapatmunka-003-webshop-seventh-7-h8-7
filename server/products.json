@@ -3,14 +3,15 @@
     {
       "id": 1,
       "catId": "cat-1",
-      "name": "Természetes gyulladás - csökkentők",
+      "name": "Természetes gyulladás- csökkentők",
       "author": "Lizzie Streit",
       "description": "Mindegy, hogy vegán, ketogén, kis szénhidráttartalmú, kis glikémiás indexű (GI) étrendet vagy más speciális diétát követünk, esetleg csak több egészséges élelmiszert szeretnénk beilleszteni a szokásos étrendünkbe, ez a könyv nagyszerű segítség, hogy megtegyük a kezdő lépéseket az egészséges életmódhoz.",
       "image": "../../assets/img/lifestyle/1.jpg",
       "price": 4560,
       "stock": 20,
       "featured": false,
-      "active": true
+      "active": true,
+      "cover": "../../assets/img/lifestyle/1.jpg"
     },
     {
       "id": 2,
