@@ -24,6 +24,8 @@ import { ShufflePipe } from './pipe/shuffle.pipe';
 import { AdminComponent } from './page/admin/admin.component';
 import { DataEditorComponent } from './common/data-editor/data-editor.component';
 import { ProductCreateComponent } from './common/product-create/product-create.component';
+import { SalePipe } from './pipe/sale.pipe';
+import { ConverterPipe } from './pipe/converter/converter.pipe';
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { ProductCreateComponent } from './common/product-create/product-create.c
     ShufflePipe,
     AdminComponent,
     DataEditorComponent,
-    ProductCreateComponent
+    ProductCreateComponent,
+    SalePipe,
+    ConverterPipe
   ],
   imports: [
     BrowserModule,
