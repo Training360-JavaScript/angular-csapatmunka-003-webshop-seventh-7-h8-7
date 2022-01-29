@@ -10,40 +10,47 @@ let keyTemp: any = null;
 export class SortPipe implements PipeTransform {
 
   transform(productList: Product[], key: string): Product[] {
+    console.log(`SortPIPE started: key = ${key} , keyTemp = ${keyTemp}` )
 
-    console.log(`SortPipe started: key, keytemp = `, key, keyTemp )
     if (!Array.isArray(productList) || !key) return productList;
 
-    if(key != keyTemp ) {
+    if (key != keyTemp) {
       keyTemp = key
-      console.log("keyTemp", keyTemp)
-      return productList.sort( (a, b) => {
-        if(typeof a[key] === "number" && typeof b[key] === "number" ) {
-          console.log("number", a[key])
-          return a[key] - b[key]
-        }
-        if(typeof a[key] == "string" && typeof b[key] == "string" ) {
-          console.log("string", a[key])
-          return a[key].toLowerCase().localeCompare(b[key].toLowerCase())
-          }
-        }
-        )
-      }
+      return this.sortUp(productList, key)
 
-      if(key == keyTemp ) {
-        console.log("keyTemp", keyTemp);
-        keyTemp = null;
+    }else if (key == keyTemp) {
+      keyTemp = null;
+      return this.sortDown(productList, key)
+    }
+    return productList
 
-        return productList.sort( (a, b) => {
-          if(typeof a[key] === "number" && typeof b[key] === "number") {
-            return b[key] - a[key]
-          }
-          if(typeof a[key] === "string" && typeof b[key] === "string" ) {
-            return b[key].toLowerCase().localeCompare(a[key].toLowerCase())
-          }
-        }
-        )
+  }
+
+  sortUp(productList: Product[], key: any): Product[] {
+    console.log(`SortPIPE => sortUp(). key = ${key} , keyTemp = ${keyTemp}`);
+    let pl =  productList.sort((a, b) => {
+      if (typeof a[key] == ("number" || "boolean") && typeof b[key] == ("number" || "boolean")) {
+        return a[key] - b[key]
+      } else if (typeof a[key] == "string" && typeof b[key] == "string") {
+        return a[key].toLowerCase().localeCompare(b[key].toLowerCase())
       }
-      return productList
-}
+    }
+    )
+    console.log("SortPIPE => sortUp() return =", pl)
+    return pl
+  }
+
+  sortDown(productList: Product[], key: any): Product[] {
+    console.log(`SortPIPE => sortDown(). key = ${key} , keyTemp = ${keyTemp}`);
+    let pl = productList.sort((a, b) => {
+      if (typeof a[key] == ("number" || "boolean") && typeof b[key] == ("number" || "boolean")) {
+        return b[key] - a[key]
+      }else if (typeof a[key] == "string" && typeof b[key] == "string") {
+        return b[key].toLowerCase().localeCompare(a[key].toLowerCase())
+      }
+    }
+    )
+    console.log("SortPIPE => sortDown() return =", pl)
+    return pl
+  }
 }

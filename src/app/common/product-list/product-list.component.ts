@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Product } from 'src/app/model/product';
 
 let keyTemp: any = null;
+let multiplier: number = 1;
 
 @Component({
   selector: 'app-product-list',
@@ -14,12 +15,13 @@ export class ProductListComponent implements OnInit {
   filterKey: string = '';
   @Input() products: Product[] = [];
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   onClickSort(data: string): void {
     this.sortKey = data;
+    console.log(`start onClickSort(), data = ${data} , keytemp = ${keyTemp}`);
     this.shorting(this.products, data);
   }
   onChangeSearch(event: Event, filterKey: string): void {
@@ -28,32 +30,23 @@ export class ProductListComponent implements OnInit {
   }
 
   shorting(productList: Product[], key: string): Product[] {
+    console.log(`onClickSort() started sorting(), key = ${key} , keytemp = ${keyTemp}`)
+
     if (!Array.isArray(productList) || !key) return productList;
 
-    if (key != keyTemp) {
-      keyTemp = key;
-      return productList.sort((a, b) => {
-        if (typeof a[key] === 'number' && typeof b[key] === 'number') {
-          return a[key] - b[key];
-        }
-        if (typeof a[key] == 'string' && typeof b[key] == 'string') {
-          return a[key].toLowerCase().localeCompare(b[key].toLowerCase());
-        }
-      });
+    let pl = productList.sort( (a, b) => {
+      if (typeof a[key] == ("number" || "boolean") && typeof b[key] == ("number" || "boolean")) {
+        return (a[key] - b[key]) * multiplier;
+      } else if (typeof a[key] == "string" && typeof b[key] == "string") {
+        console.log((a[key].toLowerCase().localeCompare(b[key].toLowerCase())));
+        return (a[key].toLowerCase().localeCompare(b[key].toLowerCase())) * multiplier
+      }
     }
+    )
+    multiplier = multiplier * -1
+    console.log("onClickSort() => sortUp() return =", pl)
+    return pl
 
-    if (key == keyTemp) {
-      keyTemp = null;
+}
 
-      return productList.sort((a, b) => {
-        if (typeof a[key] === 'number' && typeof b[key] === 'number') {
-          return b[key] - a[key];
-        }
-        if (typeof a[key] === 'string' && typeof b[key] === 'string') {
-          return b[key].toLowerCase().localeCompare(a[key].toLowerCase());
-        }
-      });
-    }
-    return productList;
-  }
 }
