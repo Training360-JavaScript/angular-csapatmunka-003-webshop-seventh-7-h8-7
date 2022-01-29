@@ -21,7 +21,7 @@ export class ProductListComponent implements OnInit {
 
   onClickSort(data: string): void {
     this.sortKey = data;
-    console.log(`start onClickSort(), data = ${data} , keytemp = ${keyTemp}`);
+    // console.log(`start onClickSort(), data = ${data} , keytemp = ${keyTemp}`);
     this.shorting(this.products, data);
   }
   onChangeSearch(event: Event, filterKey: string): void {
@@ -30,7 +30,7 @@ export class ProductListComponent implements OnInit {
   }
 
   shorting(productList: Product[], key: string): Product[] {
-    console.log(`onClickSort() started sorting(), key = ${key} , keytemp = ${keyTemp}`)
+    // console.log(`onClickSort() started sorting(), key = ${key} , keytemp = ${keyTemp}`)
 
     if (!Array.isArray(productList) || !key) return productList;
 
@@ -38,13 +38,13 @@ export class ProductListComponent implements OnInit {
       if (typeof a[key] == ("number" || "boolean") && typeof b[key] == ("number" || "boolean")) {
         return (a[key] - b[key]) * multiplier;
       } else if (typeof a[key] == "string" && typeof b[key] == "string") {
-        console.log((a[key].toLowerCase().localeCompare(b[key].toLowerCase())));
+        // console.log((a[key].toLowerCase().localeCompare(b[key].toLowerCase())));
         return (a[key].toLowerCase().localeCompare(b[key].toLowerCase())) * multiplier
       }
     }
     )
     multiplier = multiplier * -1
-    console.log("onClickSort() => sortUp() return =", pl)
+    // console.log("onClickSort() => sortUp() return =", pl)
     return pl
 
 }

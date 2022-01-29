@@ -10,7 +10,7 @@ let keyTemp: any = null;
 export class SortPipe implements PipeTransform {
 
   transform(productList: Product[], key: string): Product[] {
-    console.log(`SortPIPE started: key = ${key} , keyTemp = ${keyTemp}` )
+    // console.log(`SortPIPE started: key = ${key} , keyTemp = ${keyTemp}` )
 
     if (!Array.isArray(productList) || !key) return productList;
 
@@ -27,7 +27,7 @@ export class SortPipe implements PipeTransform {
   }
 
   sortUp(productList: Product[], key: any): Product[] {
-    console.log(`SortPIPE => sortUp(). key = ${key} , keyTemp = ${keyTemp}`);
+    // console.log(`SortPIPE => sortUp(). key = ${key} , keyTemp = ${keyTemp}`);
     let pl =  productList.sort((a, b) => {
       if (typeof a[key] == ("number" || "boolean") && typeof b[key] == ("number" || "boolean")) {
         return a[key] - b[key]
@@ -36,7 +36,7 @@ export class SortPipe implements PipeTransform {
       }
     }
     )
-    console.log("SortPIPE => sortUp() return =", pl)
+    // console.log("SortPIPE => sortUp() return =", pl)
     return pl
   }
 
