@@ -1,14 +1,16 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { Product } from '../model/product';
 
 @Pipe({
   name: 'shuffle'
 })
 export class ShufflePipe implements PipeTransform {
 
-  transform(list: Array<any>): Array<any> {
-    const newList = [...list];
-    newList.sort(() => Math.random() - 0.5);
-    return newList;
-  }
+  transform(list: Product[]): Array<Product> {
 
-}
+  for (let i = list.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [list[i], list[j]] = [list[j], list[i]];
+  }
+  return list
+}}

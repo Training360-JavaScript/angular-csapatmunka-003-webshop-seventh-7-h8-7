@@ -14,8 +14,8 @@
   </div>
 </div>
 
-<app-product-pager [productList]="productList | category: 'cat-2'" >
-
+<app-product-pager
+  [productList]="(productList$ | async)! | category: 'cat-2' | featured: true" >
 </app-product-pager>
 
 <div class="container">
@@ -28,5 +28,5 @@
 
 
 <app-product-list
-    [products]="productList | category: 'cat-2'">
+    [products]="(productList$ | async)! | category: 'cat-2' | shuffle">
 </app-product-list>

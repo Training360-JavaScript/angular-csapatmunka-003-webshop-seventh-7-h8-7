@@ -1,11 +1,12 @@
 export class Product {
   [key: string]: any;
-  id: number = 0;
+  id: string = '';
   catId: string = '';
   name: string = '';
   author: string = 'John Doe';
   description: string = '';
   image?: string = '';
+  previousPrice?: number = 0;
   price: number = 0;
   stock: number = 0;
   featured: boolean = false;
@@ -13,7 +14,7 @@ export class Product {
 
   constructor(prop?: Product) {
     if (prop) {
-      this.id = prop.id || 0;
+      this.id = prop.id || '';
       this.catId = prop.catId || '';
       this.name = prop.name || '';
       this.author = prop.author || 'John Doe',

@@ -3,15 +3,14 @@
     {
       "id": 1,
       "catId": "cat-1",
-      "name": "Természetes gyulladás- csökkentők",
+      "name": "Természetes gyulladás - csökkentők",
       "author": "Lizzie Streit",
       "description": "Mindegy, hogy vegán, ketogén, kis szénhidráttartalmú, kis glikémiás indexű (GI) étrendet vagy más speciális diétát követünk, esetleg csak több egészséges élelmiszert szeretnénk beilleszteni a szokásos étrendünkbe, ez a könyv nagyszerű segítség, hogy megtegyük a kezdő lépéseket az egészséges életmódhoz.",
       "image": "../../assets/img/lifestyle/1.jpg",
       "price": 4560,
       "stock": 20,
       "featured": false,
-      "active": true,
-      "cover": "../../assets/img/lifestyle/1.jpg"
+      "active": true
     },
     {
       "id": 2,
@@ -59,8 +58,7 @@
       "price": 2300,
       "stock": 20,
       "featured": true,
-      "active": true,
-      "cover": "../../assets/img/lifestyle/5.jpg"
+      "active": true
     },
     {
       "id": 6,
@@ -605,19 +603,6 @@
       "image": "../../assets/img/literature/25.jpg",
       "price": 3800,
       "stock": 20,
-      "featured": true,
-      "active": true
-    },
-    {
-      "id": 53,
-      "name": "A nyomorultak",
-      "author": "Victor Hugo",
-      "description": "A nyomorultak (eredeti francia címen: Les Misérables) Victor Hugo francia író regénye, amely 1862-ben jelent meg, és a 19. század leghíresebb irodalmi alkotásai közé tartozik. Cselekménye Franciaországban játszódik, a napóleoni háborúkat követő nyugtalan évtizedekben. A mű alatt lejátszódó nevezetes történelmi események: a waterlooi csata, I. Lajos Fülöp francia király uralma, az 1832-es párizsi felkelés. A főhős Jean Valjean, a nehéz sorsú volt fegyenc, aki szabadulása után megpróbál jó útra térni, de ebben őszinte igyekezete ellenére is akadályozza a meg nem bocsátó társadalom. A regény körkép Franciaország 19. századi történelméről, politikai, társadalmi, kulturális helyzetéről, elmélkedés jóról, rosszról, erkölcsről, vallásról, törvényről, szerelemről és családi összetartozásról. Gazdag leírások találhatók benne Párizs építészetéről. ",
-      "catId": "cat-2",
-      "price": 6000,
-      "previousPrice": 6500,
-      "stock": 5,
-      "image": "../../assets/img/cover01.png",
       "featured": true,
       "active": true
     }
