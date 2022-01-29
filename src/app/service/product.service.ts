@@ -13,7 +13,7 @@ export class ProductService {
   product: Product = new Product();
   apiUrl: string = environment.apiUrl;
 
-  list: Product[] = [
+  /* list: Product[] = [
     {
       "id": 1,
       "catId": "cat-1",
@@ -664,15 +664,15 @@ export class ProductService {
       "featured": false,
       "active": true
     }
-  ];
+  ]; */
 
   constructor(
     private http: HttpClient
   ) {}
 
-  getAll(): Product[] {
+  /* getAll(): Product[] {
     return this.list;
-  }
+  } */
 
   getAll2(): Observable<Product[]> {
     return this.http.get<Product[]>(`${this.apiUrl}`)
@@ -684,7 +684,17 @@ export class ProductService {
 
   update(product: Product): Observable<Product>{
     return this.http.patch<Product>(
-      `${this.apiUrl}$/${product.id}`,
+      `${this.apiUrl}/${product.id}`,
       product)
+  }
+
+  delete(product: Product): Observable<Product>{
+    return this.http.delete<Product>(
+      `${this.apiUrl}/${product.id}`)
+  }
+
+  create(product: Product): Observable<Product>{
+    return this.http.post<Product>(
+      `${this.apiUrl}/${product.id}`, product)
   }
 }

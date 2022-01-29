@@ -58,8 +58,7 @@
       "price": 2300,
       "stock": 20,
       "featured": true,
-      "active": true,
-      "cover": "../../assets/img/lifestyle/5.jpg"
+      "active": true
     },
     {
       "id": 6,
