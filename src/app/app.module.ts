@@ -23,7 +23,7 @@ import { CurrencyPipe } from './pipe/currency/currency.pipe';
 import { ShufflePipe } from './pipe/shuffle.pipe';
 import { AdminComponent } from './page/admin/admin.component';
 import { DataEditorComponent } from './common/data-editor/data-editor.component';
-import { ProductCreateComponent } from './page/product-create/product-create.component';
+import { ProductCreateComponent } from './common/product-create/product-create.component';
 
 
 @NgModule({

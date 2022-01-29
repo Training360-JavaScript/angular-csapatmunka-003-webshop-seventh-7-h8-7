@@ -7,7 +7,7 @@ import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
 import { AdminComponent } from './page/admin/admin.component';
 import { DataEditorComponent } from './common/data-editor/data-editor.component';
-import { ProductCreateComponent } from './page/product-create/product-create.component';
+import { ProductCreateComponent } from './common/product-create/product-create.component';
 
 const routes: Routes = [
   {
