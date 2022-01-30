@@ -1,6 +1,22 @@
-<h3 class="my-5 text-center">Kiemelt ajánlatunk</h3>
-<app-product-pager  [productList]="(productList$ | async)! | category: 'cat-2' | featured: true">
+<div class="header-container">
+  <div class="home-header">
+    <img src="./../assets/img/background_lib.jpg" alt="library" class="background">
+    <img src="./../assets/img/book.png" alt="book" class="foreground">
+    <div class="title"> <h1 class="title text-uppercase h-1"> 777 könyvesbolt </h1> </div>
+  </div>
+</div>
+
+<h3 class="my-5 text-center home-container">Kiemelt ajánlatunk</h3>
+<app-product-pager [productList]="(productList$ | async)! | category: 'cat-2' | featured: true" class="mb-5">
 </app-product-pager>
+
+<div class="sale-header text-center mb-5">
+  <img src="./../assets/img/background_lib.jpg" alt="library" class="background">
+  <div class="sale-title h3">Bődületes akciók!!! <br>
+  <i class="fa fa-arrow-down"></i></div>
+</div>
+
+
 <h3 class="my-5 text-center">Akciós kínálatunk</h3>
-<app-product-pager [productList]="(productList$ | async)! | shuffle">
+<app-product-pager [productList]="(productList$ | async)! | sale">
 </app-product-pager>
