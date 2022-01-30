@@ -1,9 +1,8 @@
 .carousel-control-prev {
-  transform: translate(-30px);
-  color: #555;
-}
+  transform: translate(-50px);
+  }
 .carousel-control-next {
-  transform: translate(30px);
+  transform: translate(50px);
 }
 .carousel-indicators {
   transform: translate(0px, 20px);
@@ -12,11 +11,13 @@
 .carousel-item.active {
   background-color: #eee;
   opacity: 1;
-  transition: opacity, 0.5s;
+  transition: opacity, 0.5s ease-in-out;
+  z-index: 2;
 }
 
 .carousel-item {
   opacity: 0;
+  z-index: 1;
 }
 
 .carousel-control-prev-icon,
@@ -24,12 +25,17 @@
   height: 100px;
   width: 100px;
   outline: black;
-  background-size: 100%, 100%;
+  /* background-size: 100%, 100%; */
   border-radius: 50%;
   border: 1px solid black;
-  background-image: none;
+  z-index: 3;
+  /* background-image: none; */
 }
 
 .carousel .carousel-indicators li {  background-color: gray; }
 .carousel .carousel-indicators li.active { background-color: var(--primary); }
 
+.carousel-control-prev, .carousel-control-next
+ {
+   width: 50px !important;
+ }
