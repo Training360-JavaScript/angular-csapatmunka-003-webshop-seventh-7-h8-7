@@ -28,7 +28,7 @@
 }
 
 .foreground {
-  bottom: 5px;
+  bottom: 0;
   width: 40%;
 }
 
@@ -56,7 +56,7 @@
   margin-top: 5px;
 
    & > .background  {
-      position: absolute
+     bottom: 10rem;
    }
 }
 
