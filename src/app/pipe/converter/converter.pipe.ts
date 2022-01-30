@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ConverterPipe implements PipeTransform {
 
-  transform(arr: string , categoryName: string ): string {
+  transform(categoryName: string ): string {
     if(!categoryName) return '' ;
     if(categoryName == "cat-1") return "Életmód"
     if(categoryName == "cat-2") return "Szépirodalom"

@@ -44,7 +44,7 @@
           <td> {{ product.id }} </td>
           <td> {{ product.name }} </td>
           <td> {{ product.author }} </td>
-          <td> {{ product.catId }} </td>
+          <td> {{ product.catId | converter }} </td>
           <td> {{ product.price | currency }} </td>
 
           <td>
