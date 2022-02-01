@@ -16,6 +16,13 @@
   font-size: 3rem;
   text-shadow: 1px 1px 0px #000000;
 }
+
+.sub-title{
+  font-size: 0.9rem;
+  color: white;
+  z-index: 1;
+  text-shadow: 1px 1px 0px #000000;
+}
 .foreground, .background {
   position: absolute;
   object-fit: cover;
