@@ -1,5 +1,5 @@
-<div class="container">
-  <div *ngIf="product$ | async as product" class="form-container col-8 offset-2">
+<div class="container form-container mt-3">
+  <div *ngIf="product$ | async as product" class="col-8 offset-2">
     <form #productForm="ngForm" class="mt-4">
 
     <input [(ngModel)]="product.id" name="id" type="hidden">

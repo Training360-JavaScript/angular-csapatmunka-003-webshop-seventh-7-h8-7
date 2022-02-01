@@ -2,7 +2,15 @@
 
 @font-face {
   font-family: roboto;
-  src: url(assets/font/RobotoSlab-ExtraBold.ttf) format("truetype");
+  src: url(assets/font/RobotoSlab-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: Lato;
+  src: url(assets/font/Lato-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Catamaran';
+  src: url(assets/font/Catamaran-Thin.ttf) format("truetype");
 }
 
 body {
@@ -10,7 +18,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'roboto', 'arial', sans-serif;
 };
 
+h1, h2,h4,h5,p, i, button, table, form, .h3 {
+  font-family: 'Lato';
+}
 
+h3, nav {
+  font-family: 'Catamaran';
+  text-transform: uppercase
+}
