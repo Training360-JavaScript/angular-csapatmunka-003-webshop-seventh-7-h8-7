@@ -1,5 +1,14 @@
-.card {
+body {
+  top: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
+};
+
+
+.card {
+  font-family: 'roboto', 'arial', sans-serif;
 
   &:hover {
     box-shadow: 3px 3px 10px rgb(189, 180, 180);
