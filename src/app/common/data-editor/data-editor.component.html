@@ -1,4 +1,4 @@
-<div class="row">
+<div class="container">
   <div *ngIf="product$ | async as product" class="form-container col-8 offset-2">
     <form #productForm="ngForm" class="mt-4">
 
@@ -43,43 +43,37 @@
 
     <div class="form-group">
       <label for="productCat"> Kategória </label>
-      <input [(ngModel)]="product.catId"
-        class="form-control"
-        name="catId"
-        id="productCat"
-        type="text"
-        required>
-      <div class="error-message"
+      <select [(ngModel)]="product.catId" id="productCat" name="catId" required class="form-control">
+        <option value="" selected>Válassz kategóriát...</option>
+        <option value="cat-1">Életmód</option>
+        <option value="cat-2">Szépirodalom</option>
+      </select>
+    <div class="error-message"
         [hidden]="productForm.controls['catId']?.valid">
-        A kategória mező kitöltése kötelező.
-      </div>
+      A kategória mező kitöltése kötelező.
+    </div>
     </div>
 
-    <div class="form-group">
-      <label for="productPrice"> Ár </label>
-      <input [(ngModel)]="product.price"
-        class="form-control"
-        name="price"
-        id="productPrice"
-        type="number"
-        required>
-      <div class="error-message"
-        [hidden]="productForm.controls['price']?.valid">
-        Meg kell adnia a termék árát.
+    <div class="form-group d-flex justify-content-between">
+      <div class="form-group">
+        <label for="productPrice"> Ár </label>
+        <input [(ngModel)]="product.price" class="form-control" name="price" id="productPrice" type="number" required>
+        <div class="error-message" [hidden]="productForm.controls['price']?.valid">
+          Meg kell adnia a termék árát.
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <label for="productStock"> Készlet </label>
-      <input [(ngModel)]="product.stock"
-        class="form-control"
-        name="stock"
-        id="productStock"
-        type="number"
-        required>
-      <div class="error-message"
-        [hidden]="productForm.controls['stock']?.valid">
-        Meg kell adnia a darabszámot.
+      <div class="form-group">
+        <label for="previousPrice"> Eredeti ár </label>
+        <input [(ngModel)]="product.previousPrice" class="form-control" name="previousPrice" id="previousPrice"
+          type="number">
+      </div>
+      <div class="form-group">
+        <label for="productStock"> Készlet </label>
+        <input [(ngModel)]="product.stock" class="form-control" name="stock" id="productStock" type="number" required>
+        <div class="error-message" [hidden]="productForm.controls['stock']?.valid">
+          Meg kell adnia a darabszámot.
+        </div>
       </div>
     </div>
 
@@ -93,31 +87,21 @@
     </div>
 
     <div class="form-group">
-      <label for="productFeatured"> Kiemelt </label>
-      <input [(ngModel)]="product.featured"
-        class="form-control"
-        name="featured"
-        id="productStock"
-        type="text"
-        required>
-      <div class="error-message"
-        [hidden]="productForm.controls['featured']?.valid">
-        A mező kitöltése kötelező.
+      <div class="form-check form-check-inline">
+        <input input [(ngModel)]="product.featured" class="form-check-input" type="checkbox" value="" name="featured"
+          id="featuredCheck">
+        <label class="form-check-label" for="featuredCheck">
+          Kiemelt
+        </label>
       </div>
-    </div>
+      <div class="form-check form-check-inline px-5">
+        <input input [(ngModel)]="product.active" class="form-check-input" type="checkbox" value="" name="active"
+          id="productActive">
+        <label class="form-check-label" for="productActive">
+          Elérhető
+        </label>
+      </div>
 
-    <div class="form-group">
-      <label for="productStock"> Elérhető </label>
-      <input [(ngModel)]="product.active"
-        class="form-control"
-        name="active"
-        id="productActive"
-        type="text"
-        required>
-      <div class="error-message"
-        [hidden]="productForm.controls['active']?.valid">
-        A mező kitöltése kötelező
-      </div>
     </div>
 
     <div class="button-group d-flex justify-content-center mb-5 p-1">
