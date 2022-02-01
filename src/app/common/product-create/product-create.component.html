@@ -1,5 +1,5 @@
 <h3 class="text-center my-3">Új tétel létrehozása</h3>
-<div class="row">
+<div class="container">
   <div class="form-container col-8 offset-2">
     <form (ngSubmit)="onClickCreate(productForm.value)" #productForm="ngForm" class="mt-4">
 
@@ -80,15 +80,25 @@
 
       <div class="form-group">
         <div class="form-check form-check-inline">
-          <input input [(ngModel)]="product.featured" class="form-check-input" type="checkbox" value="" name="featured"
+          <input input
+            [(ngModel)]="product.featured"
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            name="featured"
             id="featuredCheck">
           <label class="form-check-label" for="featuredCheck">
             Kiemelt
           </label>
         </div>
         <div class="form-check form-check-inline px-5">
-          <input input [(ngModel)]="product.active" class="form-check-input" type="checkbox" value="" name="active"
-            id="productActive">
+          <input input
+          [(ngModel)]="product.active"
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          name="active"
+          id="productActive">
           <label class="form-check-label" for="productActive">
             Elérhető
           </label>
