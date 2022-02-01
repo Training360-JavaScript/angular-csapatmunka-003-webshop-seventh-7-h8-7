@@ -69,10 +69,12 @@
       "author": "Jordan B. Peterson",
       "description": "Ez a tizenkét újabb szabály segíti az olvasót egy bátrabb, igazabb élethez, amelyben több értelmet fog találni. Az élet értelme nem más, mint az ismert dolgainkon való túllépés, nem más, mint az örökké változó világhoz való alkalmazkodás.",
       "image": "../../assets/img/lifestyle/6.jpg",
-      "price": 3450,
+      "price": 900,
       "stock": 20,
       "featured": false,
-      "active": true
+      "active": true,
+      "previousPrice": 3450,
+      "cover": "../../assets/img/lifestyle/6.jpg"
     },
     {
       "id": 7,
@@ -385,10 +387,12 @@
       "author": "Nyáry Krisztián",
       "description": "115 újabb szerelmes levél és történet. Nyáry Krisztián évek óta módszeresen gyűjti a magyar kultúrtörténet legszebb, legérdekesebb vagy éppen legfelháborítóbb szerelmes leveleit. A gyűjteményből 125 levelet a hozzájuk tartozó történetekkel együtt közre is bocsátott 2018-ban megjelent, nagy sikerű Írjál és szeressél című könyvében.",
       "image": "../../assets/img/literature/7.jpg",
-      "price": 4690,
+      "price": 1200,
       "stock": 4,
       "featured": false,
-      "active": true
+      "active": true,
+      "previousPrice": 4690,
+      "cover": "../../assets/img/literature/7.jpg"
     },
     {
       "id": 33,
@@ -557,7 +561,7 @@
       "image": "../../assets/img/literature/21.jpg",
       "price": 2690,
       "stock": 20,
-      "featured": false,
+      "featured": true,
       "active": true
     },
     {
@@ -593,7 +597,7 @@
       "image": "../../assets/img/literature/24.jpg",
       "price": 4560,
       "stock": 20,
-      "featured": false,
+      "featured": true,
       "active": true
     },
     {
