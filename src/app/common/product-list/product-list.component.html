@@ -2,24 +2,26 @@
   <div class="row">
     <div class="col-12">
 
-      <form class="d-flex col-10 col-lg-8 mx-auto p-5">
+      <form class="d-flex col-10 col-lg-8 mx-auto p-3">
         <input class="form-control" type="text" placeholder="Keress a címek között!"
         (keyup)="onChangeSearch($event, 'name')">
         <button class="btn btn-dark" type="submit">Keresés</button>
       </form>
 
       <div class="d-flex justify-content-center mx-auto">
-        <div class="row mx-auto justify-content-center">
-            <button class="btn-dark btn col-md-5 col-lg-3 m-5"
-                (click)="onClickSort('price')">Rendezés ár szerint</button>
-            <button class="btn-dark btn col-md-5 col-lg-3 m-5"
-                (click)="onClickSort('name')">Rendezés név szerint</button>
+        <div class="row sort-buttons mx-auto justify-content-center">
+            <button class="btn-dark btn btn-block col-lg-3 m-2"
+                (click)="onClickSort('price')">Ár szerinti rendezés</button>
+            <button class="btn-dark btn btn-block col-lg-3 m-2"
+                (click)="onClickSort('name')">Cím szerinti rendezés</button>
+            <button class="btn-dark btn btn-block col-lg-3 m-2"
+                (click)="onClickSort('author')">Szerző szerinti rendezés</button>
 
         </div>
       </div>
 
-      <div class="row">
-        <app-product-card class="col-10 col-md-5 col-lg-3 col-xl-2 m-3 justify-content-start"
+      <div class="row justify-content-center justify-content-lg-start">
+        <app-product-card class="col-10 col-md-5 col-lg-3 col-xl-2 m-3"
         *ngFor="let product of products
         | sort:sortKey
         | filter:search:filterKey"

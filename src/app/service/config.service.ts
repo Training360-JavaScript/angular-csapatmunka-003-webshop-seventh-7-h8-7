@@ -11,7 +11,7 @@ export interface IMenuItem {
 })
 export class ConfigService {
 
-  appName: string = '777 KÖNYVESBOLT';
+  appName: string = 'H8 könyvesbolt';
 
   menuItems: IMenuItem[] = [
     {text: 'Főoldal', link: '/', icon: 'home'},
