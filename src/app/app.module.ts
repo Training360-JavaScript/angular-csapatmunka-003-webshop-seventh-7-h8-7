@@ -26,6 +26,7 @@ import { DataEditorComponent } from './common/data-editor/data-editor.component'
 import { ProductCreateComponent } from './common/product-create/product-create.component';
 import { SalePipe } from './pipe/sale.pipe';
 import { ConverterPipe } from './pipe/converter/converter.pipe';
+import { ProductPager2Component } from './common/product-pager2/product-pager2.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { ConverterPipe } from './pipe/converter/converter.pipe';
     DataEditorComponent,
     ProductCreateComponent,
     SalePipe,
-    ConverterPipe
+    ConverterPipe,
+    ProductPager2Component
   ],
   imports: [
     BrowserModule,
