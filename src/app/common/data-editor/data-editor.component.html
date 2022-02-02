@@ -104,21 +104,21 @@
 
     </div>
 
-    <div class="button-group d-flex justify-content-center mb-5 p-1">
+    <div class="button-group d-flex justify-content-center mb-5 m-1">
     <button
       [disabled]="productForm.invalid"
       type="submit"
       (click)="onUpdate(productForm.value)"
-      class="btn btn-primary btn-lg">
+      class="btn btn-primary btn-lg m-1">
         <i class="fa fa-save"> Módosítás mentése</i>
     </button>
-    <button class="btn btn-danger btn-lg"
+    <button class="btn btn-danger btn-lg m-1"
       type="button"
       data-toggle="modal"
       data-target="#deleteModalCenter">
         <i class="fa fa-trash"> Tétel törlése</i>
     </button>
-    <button [routerLink]="['/', 'admin']" class="btn btn-dark btn-lg">
+    <button [routerLink]="['/', 'admin']" class="btn btn-dark btn-lg m-1">
       <i class="fa fa-undo"> Visszalépés</i>
     </button>
   </div>
