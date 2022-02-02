@@ -27,6 +27,7 @@ import { ProductCreateComponent } from './common/product-create/product-create.c
 import { SalePipe } from './pipe/sale.pipe';
 import { ConverterPipe } from './pipe/converter/converter.pipe';
 import { ProductPager2Component } from './common/product-pager2/product-pager2.component';
+import { ProductPager3Component } from './common/product-pager3/product-pager3.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { ProductPager2Component } from './common/product-pager2/product-pager2.c
     ProductCreateComponent,
     SalePipe,
     ConverterPipe,
-    ProductPager2Component
+    ProductPager2Component,
+    ProductPager3Component
   ],
   imports: [
     BrowserModule,
