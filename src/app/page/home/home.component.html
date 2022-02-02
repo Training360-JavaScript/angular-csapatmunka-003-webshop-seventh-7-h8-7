@@ -10,7 +10,7 @@
 <h3 class="my-5 text-center home-container">Kiemelt ajánlatunk</h3>
 <!-- <app-product-pager [productList]="(productList$ | async)! | category: 'cat-2' | featured: true" class="mb-5">
 </app-product-pager> -->
-<div class="container-fluid col-md-10" style="overflow-x: scroll;">
+<div class="container-fluid col-md-10 mb-3" style="overflow-x: scroll;">
   <app-product-pager3 [productList]="(productList$ | async)! | category: 'cat-2' | featured: true">
   </app-product-pager3>
 </div>
@@ -25,7 +25,7 @@
 <h3 class="my-5 text-center">Akciós kínálatunk</h3>
 <!-- <app-product-pager2 [productList]="(productList$ | async)! | sale">
 </app-product-pager2> -->
-<div class="container-fluid col-md-10" style="overflow-x: scroll;">
+<div class="container-fluid col-md-10 mb-3" style="overflow-x: scroll;">
 <app-product-pager3 [productList]="(productList$ | async)! | sale">
 </app-product-pager3>
 </div>
