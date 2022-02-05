@@ -39,7 +39,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let product of (list$ | async)! | sort:sortKey | filter:search:filterKey">
+        <tr *ngFor="let product of (list$ | async)! | sort:sortKey : direction | filter:search:filterKey">
           <td> {{ product.id }} </td>
           <td> {{ product.name }} </td>
           <td> {{ product.author }} </td>
